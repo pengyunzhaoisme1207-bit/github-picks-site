@@ -29,12 +29,20 @@ export interface Project {
 }
 
 export interface SearchProject {
+  id?: string;
   name: string;
   slug: string;
   stars: number;
   category: string;
   tags: string[];
   one_liner: string;
+  difficulty?: 1 | 2 | 3;
+  target_audience?: string[];
+  language?: string;
+  license?: string;
+  added_date?: string;
+  featured?: boolean;
+  weekly_pick?: boolean;
 }
 
 export interface UseCase {

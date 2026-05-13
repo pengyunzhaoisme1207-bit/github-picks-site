@@ -1,31 +1,40 @@
-import { getProjects } from '@/lib/data';
+import { getCategories, getProjects } from '@/lib/data';
 import HeroSection from '@/components/sections/HeroSection';
 import WeeklyPicksSection from '@/components/sections/WeeklyPicksSection';
-import CategoryGridSection from '@/components/sections/CategoryGridSection';
 import LatestProjectsSection from '@/components/sections/LatestProjectsSection';
 import AdSlot from '@/components/ui/AdSlot';
 import { SITE_NAME } from '@/lib/constants';
+import ProjectDirectory from '@/components/directory/ProjectDirectory';
 
 export default function HomePage() {
   const projects = getProjects();
+  const categories = getCategories();
   const latest = projects
     .sort((a, b) => new Date(b.added_date).getTime() - new Date(a.added_date).getTime())
     .slice(0, 6);
-  const searchProjects = projects.map(({ name, slug, stars, category, tags, one_liner }) => ({
+  const directoryProjects = projects.map(({ id, name, slug, stars, category, tags, one_liner, difficulty, target_audience, language, license, added_date, featured, weekly_pick }) => ({
+    id,
     name,
     slug,
     stars,
     category,
     tags,
     one_liner,
+    difficulty,
+    target_audience,
+    language,
+    license,
+    added_date,
+    featured,
+    weekly_pick,
   }));
 
   return (
     <div>
-      <HeroSection projects={searchProjects} />
-      <WeeklyPicksSection />
+      <HeroSection projects={directoryProjects} />
+      <ProjectDirectory projects={directoryProjects} categories={categories} />
       <AdSlot slot="top" />
-      <CategoryGridSection />
+      <WeeklyPicksSection />
       <LatestProjectsSection projects={latest} />
       <AdSlot slot="middle" />
       <section className="py-12 px-4 bg-slate-50">
