@@ -1,8 +1,8 @@
 import SearchBar from '@/components/ui/SearchBar';
-import type { Project } from '@/lib/types';
+import type { SearchProject } from '@/lib/types';
 
 interface HeroSectionProps {
-  projects: Project[];
+  projects: SearchProject[];
 }
 
 export default function HeroSection({ projects }: HeroSectionProps) {

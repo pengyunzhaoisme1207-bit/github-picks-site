@@ -25,6 +25,15 @@ export interface Project {
   cross_links?: CrossLink[];
 }
 
+export interface SearchProject {
+  name: string;
+  slug: string;
+  stars: number;
+  category: string;
+  tags: string[];
+  one_liner: string;
+}
+
 export interface UseCase {
   scenario: string;
   description: string;

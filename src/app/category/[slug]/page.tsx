@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { getCategories, getCategoryBySlug, getProjectsByCategory } from '@/lib/data';
-import { SITE_URL } from '@/lib/constants';
+import { SITE_NAME, SITE_URL } from '@/lib/constants';
 import { getCurrentYear } from '@/lib/utils';
 import ProjectCard from '@/components/ui/ProjectCard';
 
@@ -17,8 +17,19 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   const year = getCurrentYear();
   return {
-    title: `Best ${category.name} GitHub Projects ${year} — Free & Open Source | GitHubPicks`,
+    title: `Best ${category.name} GitHub Projects ${year} — Free & Open Source`,
     description: category.description,
+    openGraph: {
+      title: `Best ${category.name} GitHub Projects ${year} | ${SITE_NAME}`,
+      description: category.description,
+      url: `${SITE_URL}/category/${category.slug}`,
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary',
+      title: `Best ${category.name} GitHub Projects ${year} | ${SITE_NAME}`,
+      description: category.description,
+    },
     alternates: {
       canonical: `${SITE_URL}/category/${category.slug}`,
     },
@@ -32,9 +43,29 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
 
   const projects = getProjectsByCategory(slug)
     .sort((a, b) => b.stars - a.stars);
+  const categoryUrl = `${SITE_URL}/category/${category.slug}`;
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: `${category.name} GitHub Projects`,
+    description: category.description,
+    url: categoryUrl,
+    isPartOf: {
+      '@type': 'WebSite',
+      name: SITE_NAME,
+      url: SITE_URL,
+    },
+    mainEntity: projects.slice(0, 12).map((project, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      url: `${SITE_URL}/project/${project.slug}`,
+      name: project.name,
+    })),
+  };
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <nav className="text-sm text-slate-500 mb-6">
         <Link href="/" className="hover:text-slate-900">Home</Link>
         <span className="mx-2">/</span>

@@ -25,6 +25,8 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-2">More from next-happy.com</h4>
             <ul className="space-y-1 text-sm">
+              <li><a href="https://next-happy.com" className="text-slate-600 hover:text-slate-900">AI Tools Directory</a></li>
+              <li><a href="https://prompt.next-happy.com" className="text-slate-600 hover:text-slate-900">PromptCraft</a></li>
               <li><a href="https://converter.next-happy.com" className="text-slate-600 hover:text-slate-900">Free Unit Converter</a></li>
             </ul>
           </div>

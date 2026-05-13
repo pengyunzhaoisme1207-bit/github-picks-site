@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { ExternalLink, Star, Calendar, Code } from 'lucide-react';
 import { getProjects, getProjectBySlug, getCategories } from '@/lib/data';
-import { SITE_URL } from '@/lib/constants';
+import { SITE_NAME, SITE_URL } from '@/lib/constants';
 import { formatStars, getDifficultyStars, formatDate } from '@/lib/utils';
 import DifficultyBadge from '@/components/ui/DifficultyBadge';
 import AdSlot from '@/components/ui/AdSlot';
@@ -20,13 +20,20 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!project) return { title: 'Project Not Found' };
 
   return {
-    title: `${project.name} — ${project.one_liner} | GitHubPicks`,
+    title: `${project.name} — ${project.one_liner}`,
     description: project.editors_note.slice(0, 155),
     openGraph: {
       title: `${project.name} | GitHubPicks`,
       description: project.one_liner,
       type: 'article',
+      url: `${SITE_URL}/project/${project.slug}`,
       publishedTime: project.added_date,
+      modifiedTime: project.added_date,
+    },
+    twitter: {
+      card: 'summary',
+      title: `${project.name} | GitHubPicks`,
+      description: project.one_liner,
     },
     alternates: {
       canonical: `${SITE_URL}/project/${project.slug}`,
@@ -51,13 +58,25 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
     .slice(0, 3);
 
   const breadcrumbName = getBreadcrumb(project.category);
+  const projectUrl = `${SITE_URL}/project/${project.slug}`;
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: project.name,
     description: project.one_liner,
+    url: projectUrl,
+    mainEntityOfPage: projectUrl,
     datePublished: project.added_date,
-    author: { '@type': 'Organization', name: 'GitHubPicks' },
+    dateModified: project.added_date,
+    author: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+    publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+    about: {
+      '@type': 'SoftwareSourceCode',
+      name: project.name,
+      codeRepository: project.github_url,
+      programmingLanguage: project.language,
+      license: project.license,
+    },
   };
 
   return (

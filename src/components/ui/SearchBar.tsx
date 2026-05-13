@@ -4,11 +4,11 @@ import { useState, useRef, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import Fuse from 'fuse.js';
 import { Search } from 'lucide-react';
-import type { Project } from '@/lib/types';
+import type { SearchProject } from '@/lib/types';
 import { formatStars } from '@/lib/utils';
 
 interface SearchBarProps {
-  projects: Project[];
+  projects: SearchProject[];
 }
 
 export default function SearchBar({ projects }: SearchBarProps) {

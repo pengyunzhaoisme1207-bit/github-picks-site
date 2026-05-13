@@ -11,10 +11,18 @@ export default function HomePage() {
   const latest = projects
     .sort((a, b) => new Date(b.added_date).getTime() - new Date(a.added_date).getTime())
     .slice(0, 6);
+  const searchProjects = projects.map(({ name, slug, stars, category, tags, one_liner }) => ({
+    name,
+    slug,
+    stars,
+    category,
+    tags,
+    one_liner,
+  }));
 
   return (
     <div>
-      <HeroSection projects={projects} />
+      <HeroSection projects={searchProjects} />
       <WeeklyPicksSection />
       <AdSlot slot="top" />
       <CategoryGridSection />

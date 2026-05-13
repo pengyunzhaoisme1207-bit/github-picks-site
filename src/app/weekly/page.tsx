@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { getWeeklyPicks, getProjectBySlug } from '@/lib/data';
 import { getCurrentYear } from '@/lib/utils';
+import { SITE_NAME, SITE_URL } from '@/lib/constants';
 import ProjectCard from '@/components/ui/ProjectCard';
 import type { Project } from '@/lib/types';
 
@@ -11,8 +12,17 @@ export async function generateMetadata() {
   const year = getCurrentYear();
 
   return {
-    title: `GitHub Weekly Picks — Top Open Source Projects ${month} ${year} | GitHubPicks`,
+    title: `GitHub Weekly Picks — Top Open Source Projects ${month} ${year}`,
     description: 'Our curated selection of the best GitHub projects this week, with editor notes and use cases.',
+    alternates: {
+      canonical: `${SITE_URL}/weekly`,
+    },
+    openGraph: {
+      title: `GitHub Weekly Picks ${month} ${year} | ${SITE_NAME}`,
+      description: 'Our curated selection of the best GitHub projects this week, with editor notes and use cases.',
+      url: `${SITE_URL}/weekly`,
+      type: 'website',
+    },
   };
 }
 

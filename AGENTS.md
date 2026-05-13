@@ -9,7 +9,7 @@
 名称：GitHubPicks
 口号：Discover the Best GitHub Projects for Real People
 子域名：github.next-happy.com
-技术栈：Next.js 15 (App Router) + TypeScript + Tailwind CSS
+技术栈：Next.js App Router + TypeScript + Tailwind CSS（当前 package 使用 Next.js 16）
 数据：JSON 文件驱动，构建时静态生成 (SSG)
 部署：Vercel
 仓库：github-picks-site（pengyunzhaoisme1207-bit 下）
@@ -80,7 +80,8 @@ props:
 
 行为:
   - 开发环境显示占位标识 [AdSlot: {slot}]
-  - 生产环境渲染 AdSense 代码
+- 生产环境仅在配置真实数字广告位 ID 后渲染手动 AdSense 单元
+- Auto Ads 通过全站脚本接入，不允许把 top/middle/result 当成 data-ad-slot
   - 移动端自动限制每屏最多 1 个
 ```
 

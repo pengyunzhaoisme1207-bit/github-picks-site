@@ -1,7 +1,11 @@
+import { ADSENSE_CLIENT_ID } from '@/lib/constants';
+
 interface AdSlotProps {
   slot: 'top' | 'middle' | 'result' | 'bottom' | 'inline';
   className?: string;
 }
+
+const AD_SLOT_IDS: Partial<Record<AdSlotProps['slot'], string>> = {};
 
 export default function AdSlot({ slot, className = '' }: AdSlotProps) {
   if (process.env.NODE_ENV === 'development') {
@@ -12,15 +16,21 @@ export default function AdSlot({ slot, className = '' }: AdSlotProps) {
     );
   }
 
+  const slotId = AD_SLOT_IDS[slot];
+
+  if (!slotId) {
+    return null;
+  }
+
   return (
-    <div className={`my-4 ${className}`}>
+    <aside className={`my-4 ${className}`} aria-label="Advertisement">
       <ins
         className="adsbygoogle"
         style={{ display: 'block' }}
-        data-ad-client={process.env.NEXT_PUBLIC_ADSENSE_ID || ''}
-        data-ad-slot={slot}
+        data-ad-client={ADSENSE_CLIENT_ID}
+        data-ad-slot={slotId}
         data-full-width-responsive="true"
       />
-    </div>
+    </aside>
   );
 }

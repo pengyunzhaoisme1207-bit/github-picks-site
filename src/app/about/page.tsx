@@ -13,7 +13,7 @@ export default function AboutPage() {
       <div className="prose prose-slate max-w-none">
         <h2 className="text-xl font-semibold text-slate-900 mb-3">Our Mission</h2>
         <p className="text-slate-700 mb-6">
-          GitHub hosts millions of repositories, but finding the ones that actually solve your problems is hard.
+          GitHub hosts millions of repositories, but finding the ones that actually solve your problems is hard.{' '}
           {SITE_NAME} exists to bridge that gap. We find, test, and explain the best open source projects in plain English —
           so you don&apos;t need a computer science degree to benefit from them.
         </p>
