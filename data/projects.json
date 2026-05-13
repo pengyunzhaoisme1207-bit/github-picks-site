@@ -1,0 +1,1187 @@
+{
+  "projects": [
+    {
+      "id": "ollama",
+      "name": "Ollama",
+      "slug": "ollama",
+      "github_url": "https://github.com/ollama/ollama",
+      "website_url": "https://ollama.com",
+      "stars": 120000,
+      "language": "Go",
+      "license": "MIT",
+      "category": "ai-tools",
+      "tags": ["ai", "llm", "local", "no-code", "docker"],
+      "difficulty": 1,
+      "target_audience": ["individuals", "non-developers", "developers"],
+      "one_liner": "Run LLMs on your own computer with a single command — no GPU required for smaller models",
+      "highlights": [
+        "One-command install and run of popular LLMs like Llama, Mistral, and Phi",
+        "Supports 200+ open source models out of the box",
+        "REST API that works with existing ChatGPT-compatible apps"
+      ],
+      "use_cases": [
+        { "scenario": "Chat with AI privately", "description": "Run AI models locally without sending your data to any cloud service — ideal for sensitive conversations" },
+        { "scenario": "Test AI before buying", "description": "Try different models on your hardware before committing to a cloud subscription or expensive API plan" },
+        { "scenario": "Build AI apps offline", "description": "Develop and test AI applications without an internet connection or API keys" }
+      ],
+      "editors_note": "Ollama is the single easiest way to start running AI models locally. If you've ever wanted to try ChatGPT-like tools without the privacy concerns or subscription fees, this is your starting point. It works on Mac, Linux, and Windows — even without a dedicated GPU.",
+      "featured": true, "weekly_pick": true, "week": "2026-W20", "category_rank": 1,
+      "added_date": "2026-05-13",
+      "related_projects": ["open-webui", "lm-studio", "jan"],
+      "affiliate_opportunity": null
+    },
+    {
+      "id": "open-webui",
+      "name": "Open WebUI",
+      "slug": "open-webui",
+      "github_url": "https://github.com/open-webui/open-webui",
+      "website_url": "https://openwebui.com",
+      "stars": 48000,
+      "language": "TypeScript",
+      "license": "MIT",
+      "category": "ai-tools",
+      "tags": ["ai", "llm", "web-ui", "docker", "self-hosted"],
+      "difficulty": 2,
+      "target_audience": ["developers", "teams"],
+      "one_liner": "A beautiful, feature-rich web interface for Ollama and other LLM backends",
+      "highlights": [
+        "ChatGPT-like interface with RAG document support built in",
+        "Multiple model comparison and conversation memory",
+        "Self-hosted Docker deployment in under 5 minutes"
+      ],
+      "use_cases": [
+        { "scenario": "Team AI chat platform", "description": "Share a single AI instance with your team, complete with user accounts and conversation history" },
+        { "scenario": "Document Q&A", "description": "Upload PDFs and documents, then ask questions about their content using RAG" }
+      ],
+      "editors_note": "Open WebUI turns Ollama into a full-featured ChatGPT alternative. The interface is polished enough that non-technical users won't feel out of place, while developers get deep customization options.",
+      "featured": false,
+      "added_date": "2026-05-13",
+      "related_projects": ["ollama", "lobe-chat", "anything-llm"],
+      "affiliate_opportunity": null
+    },
+    {
+      "id": "anything-llm",
+      "name": "AnythingLLM",
+      "slug": "anything-llm",
+      "github_url": "https://github.com/Mintplex-Labs/anything-llm",
+      "stars": 28000,
+      "language": "JavaScript",
+      "license": "MIT",
+      "category": "ai-tools",
+      "tags": ["ai", "llm", "enterprise", "self-hosted", "rag"],
+      "difficulty": 2,
+      "target_audience": ["teams", "businesses"],
+      "one_liner": "Enterprise-grade private ChatGPT replacement with document intelligence",
+      "highlights": [
+        "Turn any document into AI conversation with one click",
+        "Supports multiple LLM providers simultaneously",
+        "Workspace isolation for team collaboration"
+      ],
+      "use_cases": [
+        { "scenario": "Company knowledge base AI", "description": "Feed your company docs into AnythingLLM and let employees ask questions in natural language" },
+        { "scenario": "Research document analysis", "description": "Upload academic papers and research reports to extract insights quickly" }
+      ],
+      "editors_note": "AnythingLLM is what happens when you take ChatGPT seriously for business. It's not just a chat interface — it's a full document intelligence platform that keeps your data private.",
+      "added_date": "2026-05-13",
+      "related_projects": ["open-webui", "private-gpt", "dify"],
+      "affiliate_opportunity": null
+    },
+    {
+      "id": "n8n",
+      "name": "n8n",
+      "slug": "n8n",
+      "github_url": "https://github.com/n8n-io/n8n",
+      "website_url": "https://n8n.io",
+      "stars": 55000,
+      "language": "TypeScript",
+      "license": "Sustainable Use (fair-code)",
+      "category": "ai-tools",
+      "tags": ["automation", "ai", "workflow", "no-code", "self-hosted"],
+      "difficulty": 1,
+      "target_audience": ["individuals", "teams", "non-developers"],
+      "one_liner": "Visual workflow automation with AI nodes — replace Zapier without the per-task fees",
+      "highlights": [
+        "Drag-and-drop automation builder with 400+ integrations",
+        "AI workflow nodes for GPT, Claude, and local models",
+        "Self-hosted free version with no task limits"
+      ],
+      "use_cases": [
+        { "scenario": "Replace Zapier workflows", "description": "Migrate your existing Zapier automations to n8n and save $50+/month on subscription fees" },
+        { "scenario": "AI content pipeline", "description": "Build automated workflows that fetch RSS, summarize with AI, and post to social media" }
+      ],
+      "editors_note": "n8n is the automation tool that Zapier doesn't want you to know about. The visual workflow builder is intuitive enough for non-developers, and the self-hosted version removes all usage limits.",
+      "featured": true, "weekly_pick": true, "week": "2026-W19",
+      "added_date": "2026-05-13",
+      "related_projects": ["flowise", "dify"],
+      "affiliate_opportunity": "VPS hosting for self-hosted n8n"
+    },
+    {
+      "id": "lm-studio",
+      "name": "LM Studio",
+      "slug": "lm-studio",
+      "github_url": "https://github.com/lmstudio-ai/lm-studio",
+      "website_url": "https://lmstudio.ai",
+      "stars": 15000,
+      "language": "C++",
+      "license": "Proprietary (free tier)",
+      "category": "ai-tools",
+      "tags": ["ai", "llm", "desktop", "no-code"],
+      "difficulty": 1,
+      "target_audience": ["individuals", "non-developers"],
+      "one_liner": "Desktop app to discover, download, and run local LLMs with a gorgeous interface",
+      "highlights": [
+        "Built-in model browser with one-click download and run",
+        "Chat interface with side-by-side model comparison",
+        "Local server mode for API-compatible integrations"
+      ],
+      "use_cases": [
+        { "scenario": "Explore AI models visually", "description": "Browse available models, see benchmarks, and test them all without touching a terminal" },
+        { "scenario": "Run AI on Mac Silicon", "description": "Optimized for Apple Silicon chips — runs Llama 3 8B smoothly on M1/M2/M3 Macs" }
+      ],
+      "editors_note": "LM Studio is the most polished desktop GUI for local AI. If Ollama feels too command-line-heavy, LM Studio gives you a visual storefront for the same models.",
+      "added_date": "2026-05-13",
+      "related_projects": ["ollama", "jan", "gpt4all"],
+      "affiliate_opportunity": null
+    },
+    {
+      "id": "dify",
+      "name": "Dify",
+      "slug": "dify",
+      "github_url": "https://github.com/langgenius/dify",
+      "website_url": "https://dify.ai",
+      "stars": 50000,
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "category": "ai-tools",
+      "tags": ["ai", "llm", "workflow", "no-code", "api"],
+      "difficulty": 2,
+      "target_audience": ["developers", "teams", "businesses"],
+      "one_liner": "Visual LLM app development platform with built-in model management and RAG engine",
+      "highlights": [
+        "Drag-and-drop AI app builder with prompt IDE and dataset management",
+        "Supports 30+ model providers including OpenAI, Anthropic, and local models",
+        "One-click deployment with built-in API and web app generation"
+      ],
+      "use_cases": [
+        { "scenario": "Build custom AI assistants", "description": "Create domain-specific AI assistants with your own knowledge base and workflow logic" },
+        { "scenario": "Prototype AI products", "description": "Go from idea to working AI prototype in hours instead of weeks" }
+      ],
+      "editors_note": "Dify is the fastest way to go from AI idea to working product. The visual builder makes it accessible to non-engineers, while the API-first approach keeps developers happy.",
+      "added_date": "2026-05-13",
+      "related_projects": ["flowise", "anything-llm", "n8n"],
+      "affiliate_opportunity": null
+    },
+    {
+      "id": "flowise",
+      "name": "Flowise",
+      "slug": "flowise",
+      "github_url": "https://github.com/FlowiseAI/Flowise",
+      "website_url": "https://flowiseai.com",
+      "stars": 27000,
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "category": "ai-tools",
+      "tags": ["ai", "llm", "workflow", "drag-and-drop"],
+      "difficulty": 2,
+      "target_audience": ["developers", "teams"],
+      "one_liner": "Drag-and-drop tool to build custom LLM workflows without writing code",
+      "highlights": [
+        "Visual flow builder for LangChain-based AI applications",
+        "Pre-built templates for common AI patterns like RAG and agents",
+        "Embeddable chat widget for your own website"
+      ],
+      "use_cases": [
+        { "scenario": "Create custom AI chains", "description": "Chain multiple LLM calls, vector stores, and tools together without coding" },
+        { "scenario": "Add chatbot to website", "description": "Deploy an AI chatbot trained on your website content in minutes" }
+      ],
+      "editors_note": "Flowise makes LangChain accessible through a visual interface. If you've ever wanted to build complex AI workflows without the Python dependency hell, this is your tool.",
+      "added_date": "2026-05-13",
+      "related_projects": ["dify", "n8n"],
+      "affiliate_opportunity": null
+    },
+    {
+      "id": "lobe-chat",
+      "name": "Lobe Chat",
+      "slug": "lobe-chat",
+      "github_url": "https://github.com/lobehub/lobe-chat",
+      "website_url": "https://lobechat.com",
+      "stars": 40000,
+      "language": "TypeScript",
+      "license": "MIT",
+      "category": "ai-tools",
+      "tags": ["ai", "chat", "web-ui", "self-hosted"],
+      "difficulty": 2,
+      "target_audience": ["individuals", "developers"],
+      "one_liner": "Modern open-source chat UI with plugin ecosystem and multi-model support",
+      "highlights": [
+        "Beautiful UI with theme customization and markdown rendering",
+        "Plugin system for web search, image generation, and code execution",
+        "Supports OpenAI, Claude, Ollama, and other providers simultaneously"
+      ],
+      "use_cases": [
+        { "scenario": "Personal AI assistant", "description": "Unified chat interface for all your AI models with conversation history and bookmarks" },
+        { "scenario": "Team AI workspace", "description": "Self-host a shared AI platform with role-based access and usage tracking" }
+      ],
+      "editors_note": "Lobe Chat is what happens when you take the ChatGPT interface seriously as an open source project. The plugin system makes it extensible beyond what most proprietary chat apps offer.",
+      "added_date": "2026-05-13",
+      "related_projects": ["open-webui", "jan"],
+      "affiliate_opportunity": null
+    },
+    {
+      "id": "jan",
+      "name": "Jan",
+      "slug": "jan",
+      "github_url": "https://github.com/janhq/jan",
+      "website_url": "https://jan.ai",
+      "stars": 24000,
+      "language": "TypeScript",
+      "license": "AGPL-3.0",
+      "category": "ai-tools",
+      "tags": ["ai", "llm", "desktop", "offline", "privacy"],
+      "difficulty": 1,
+      "target_audience": ["individuals", "non-developers"],
+      "one_liner": "Fully offline AI assistant desktop app — your data never leaves your computer",
+      "highlights": [
+        "100% offline — no cloud APIs, no data collection, no subscriptions",
+        "Supports local models via built-in engine and remote providers",
+        "Clean, simple interface designed for daily AI use"
+      ],
+      "use_cases": [
+        { "scenario": "Private AI usage", "description": "Use AI for personal tasks without any data leaving your device — ideal for sensitive industries" },
+        { "scenario": "Offline AI access", "description": "Run AI on flights, trains, or anywhere without reliable internet" }
+      ],
+      "editors_note": "Jan takes privacy seriously. Unlike cloud-based AI, your conversations stay on your machine. It's the closest thing to having ChatGPT installed locally.",
+      "added_date": "2026-05-13",
+      "related_projects": ["ollama", "lm-studio", "gpt4all"],
+      "affiliate_opportunity": null
+    },
+    {
+      "id": "gpt4all",
+      "name": "GPT4All",
+      "slug": "gpt4all",
+      "github_url": "https://github.com/nomic-ai/gpt4all",
+      "stars": 70000,
+      "language": "Python",
+      "license": "MIT",
+      "category": "ai-tools",
+      "tags": ["ai", "llm", "local", "python"],
+      "difficulty": 2,
+      "target_audience": ["developers", "data-scientists"],
+      "one_liner": "Run powerful open source LLMs locally with a Python-first approach",
+      "highlights": [
+        "One of the earliest local LLM runners with a large community",
+        "Python SDK for integrating models into your own applications",
+        "Curated model collection optimized for various hardware configurations"
+      ],
+      "use_cases": [
+        { "scenario": "Python AI development", "description": "Import and run LLMs directly in your Python scripts and Jupyter notebooks" },
+        { "scenario": "Model benchmarking", "description": "Compare multiple local models on your hardware to find the best fit" }
+      ],
+      "editors_note": "GPT4All pioneered local AI accessibility. While newer tools have flashier interfaces, its Python SDK remains the most developer-friendly way to integrate local LLMs.",
+      "added_date": "2026-05-13",
+      "related_projects": ["ollama", "jan", "private-gpt"],
+      "affiliate_opportunity": null
+    },
+    {
+      "id": "vaultwarden",
+      "name": "Vaultwarden",
+      "slug": "vaultwarden",
+      "github_url": "https://github.com/dani-garcia/vaultwarden",
+      "stars": 36000,
+      "language": "Rust",
+      "license": "GPL-3.0",
+      "category": "security-privacy",
+      "tags": ["password-manager", "self-hosted", "docker", "privacy"],
+      "difficulty": 2,
+      "target_audience": ["individuals", "families", "developers"],
+      "one_liner": "Lightweight, self-hosted Bitwarden-compatible password server that runs on a $5 VPS",
+      "highlights": [
+        "Full Bitwarden API compatibility — works with all official Bitwarden apps",
+        "Written in Rust — uses minimal memory and runs on cheap hardware",
+        "Supports TOTP, YubiKey, and SSO for enterprise-grade auth"
+      ],
+      "use_cases": [
+        { "scenario": "Ditch cloud password managers", "description": "Host your own password server and stop trusting third parties with your credentials" },
+        { "scenario": "Family password sharing", "description": "Share passwords securely with family members without premium subscription fees" }
+      ],
+      "editors_note": "Vaultwarden is the self-hosted password manager that Bitwarden's own server should have been. It's lighter, faster, and completely free.",
+      "featured": true, "weekly_pick": true, "week": "2026-W19",
+      "added_date": "2026-05-13",
+      "related_projects": ["bitwarden"],
+      "affiliate_opportunity": "VPS hosting"
+    },
+    {
+      "id": "immich",
+      "name": "Immich",
+      "slug": "immich",
+      "github_url": "https://github.com/immich-app/immich",
+      "website_url": "https://immich.app",
+      "stars": 50000,
+      "language": "TypeScript",
+      "license": "AGPL-3.0",
+      "category": "self-hosted",
+      "tags": ["self-hosted", "photos", "docker", "google-photos-alternative"],
+      "difficulty": 2,
+      "target_audience": ["individuals", "families"],
+      "one_liner": "Self-hosted Google Photos alternative with automatic backup, AI face recognition, and beautiful UI",
+      "highlights": [
+        "Mobile app with auto backup — works just like Google Photos",
+        "AI-powered face detection, object recognition, and map view",
+        "Multi-user support with shared albums and favorites"
+      ],
+      "use_cases": [
+        { "scenario": "Replace Google Photos", "description": "Keep all your photos on your own server with the same features Google Photos offers" },
+        { "scenario": "Family photo library", "description": "Multiple family members can backup and share photos without cloud storage limits" }
+      ],
+      "editors_note": "Immich is the closest thing to a self-hosted Google Photos. The mobile app works identically, and the AI features actually rival Google's.",
+      "featured": true, "weekly_pick": true, "week": "2026-W20",
+      "added_date": "2026-05-13",
+      "related_projects": ["photoprism", "nextcloud"],
+      "affiliate_opportunity": "VPS/NAS storage"
+    },
+    {
+      "id": "jellyfin",
+      "name": "Jellyfin",
+      "slug": "jellyfin",
+      "github_url": "https://github.com/jellyfin/jellyfin",
+      "website_url": "https://jellyfin.org",
+      "stars": 34000,
+      "language": "C#",
+      "license": "GPL-2.0",
+      "category": "home-media",
+      "tags": ["media-server", "self-hosted", "streaming", "plex-alternative"],
+      "difficulty": 1,
+      "target_audience": ["individuals", "families"],
+      "one_liner": "Free media server that streams your movies, shows, and music — no premium tier, no limits",
+      "highlights": [
+        "100% free and open source — no premium version or paywalls",
+        "Apps for every platform: Roku, Fire TV, Android, iOS, Web, and more",
+        "Live TV and DVR support with compatible tuners"
+      ],
+      "use_cases": [
+        { "scenario": "Replace Plex", "description": "Stream your media collection without Plex's premium paywall or remote server dependency" },
+        { "scenario": "Home media center", "description": "Share your movie library across all devices in your home with beautiful metadata" }
+      ],
+      "editors_note": "Jellyfin is the media server that respects your freedom. Unlike Plex, everything is free and there's no premium tier locking features behind a paywall.",
+      "featured": true, "weekly_pick": true, "week": "2026-W18",
+      "added_date": "2026-05-13",
+      "related_projects": ["plex", "emby"],
+      "affiliate_opportunity": null
+    },
+    {
+      "id": "excalidraw",
+      "name": "Excalidraw",
+      "slug": "excalidraw",
+      "github_url": "https://github.com/excalidraw/excalidraw",
+      "website_url": "https://excalidraw.com",
+      "stars": 90000,
+      "language": "TypeScript",
+      "license": "MIT",
+      "category": "design-tools",
+      "tags": ["diagramming", "whiteboard", "collaboration", "no-code"],
+      "difficulty": 1,
+      "target_audience": ["individuals", "teams", "non-developers"],
+      "one_liner": "Hand-drawn style virtual whiteboard for diagrams, sketches, and collaborative brainstorming",
+      "highlights": [
+        "Instantly usable in browser — no signup or installation required",
+        "Real-time collaboration with end-to-end encryption",
+        "Rich library of shapes, icons, and hand-drawn style elements"
+      ],
+      "use_cases": [
+        { "scenario": "Quick diagram for docs", "description": "Create architecture diagrams for documentation with the signature hand-drawn look" },
+        { "scenario": "Team brainstorming", "description": "Collaborative whiteboard sessions with remote team members in real-time" }
+      ],
+      "editors_note": "Excalidraw is the diagram tool you reach for when you need something fast and expressive. The hand-drawn style makes even rough sketches look intentional.",
+      "featured": true, "weekly_pick": true, "week": "2026-W20",
+      "added_date": "2026-05-13",
+      "related_projects": ["drawio", "penpot"],
+      "affiliate_opportunity": null
+    },
+    {
+      "id": "penpot",
+      "name": "Penpot",
+      "slug": "penpot",
+      "github_url": "https://github.com/penpot/penpot",
+      "website_url": "https://penpot.app",
+      "stars": 32000,
+      "language": "Clojure",
+      "license": "MPL-2.0",
+      "category": "design-tools",
+      "tags": ["design", "figma-alternative", "ui", "prototype"],
+      "difficulty": 1,
+      "target_audience": ["designers", "teams"],
+      "one_liner": "Open source Figma alternative for UI design and prototyping — browser-based, no installation",
+      "highlights": [
+        "Design and prototype in the browser with real-time collaboration",
+        "SVG-based with design-to-code handoff for developers",
+        "No premium paywalls — all features included in the free version"
+      ],
+      "use_cases": [
+        { "scenario": "Escape Figma pricing", "description": "Switch from Figma's expensive per-editor pricing to a fully self-hosted alternative" },
+        { "scenario": "Design system creation", "description": "Build and maintain consistent design systems with component libraries" }
+      ],
+      "editors_note": "Penpot is gaining real traction as the open source Figma alternative. It's not as mature yet, but for most UI design tasks, it's more than capable.",
+      "featured": true, "weekly_pick": true, "week": "2026-W19",
+      "added_date": "2026-05-13",
+      "related_projects": ["excalidraw", "drawio"],
+      "affiliate_opportunity": null
+    },
+    {
+      "id": "drawio",
+      "name": "draw.io (diagrams.net)",
+      "slug": "drawio",
+      "github_url": "https://github.com/jgraph/drawio-desktop",
+      "website_url": "https://www.drawio.com",
+      "stars": 42000,
+      "language": "JavaScript",
+      "license": "Apache-2.0",
+      "category": "design-tools",
+      "tags": ["diagramming", "flowchart", "no-code", "web"],
+      "difficulty": 1,
+      "target_audience": ["individuals", "non-developers", "developers"],
+      "one_liner": "Free diagram maker for flowcharts, org charts, UML, and network diagrams — works offline",
+      "highlights": [
+        "Works in browser or as desktop app with offline support",
+        "Integrates with Google Drive, OneDrive, and GitHub",
+        "Massive library of templates and shape libraries"
+      ],
+      "use_cases": [
+        { "scenario": "Create flowcharts quickly", "description": "Drag-and-drop shapes to create professional flowcharts and process diagrams" },
+        { "scenario": "UML for developers", "description": "Draw class diagrams, sequence diagrams, and entity-relationship diagrams" }
+      ],
+      "editors_note": "draw.io is the Swiss Army knife of diagramming. It's not the prettiest tool, but it covers more diagram types than any single competitor.",
+      "added_date": "2026-05-13",
+      "related_projects": ["excalidraw"],
+      "affiliate_opportunity": null
+    },
+    {
+      "id": "maybe-finance",
+      "name": "Maybe Finance",
+      "slug": "maybe-finance",
+      "github_url": "https://github.com/maybe-finance/maybe",
+      "website_url": "https://maybe.co",
+      "stars": 33000,
+      "language": "Ruby",
+      "license": "AGPL-3.0",
+      "category": "finance",
+      "tags": ["self-hosted", "personal-finance", "budgeting"],
+      "difficulty": 2,
+      "target_audience": ["individuals", "families", "non-developers"],
+      "one_liner": "Self-hosted personal finance app that used to cost $500/year as a SaaS",
+      "highlights": [
+        "Track all accounts, investments, and net worth in one dashboard",
+        "Open sourced after the company shut down its SaaS version",
+        "Beautiful UI that rivals paid apps like YNAB or Copilot Money"
+      ],
+      "use_cases": [
+        { "scenario": "Replace YNAB", "description": "Track budgets and spending without the $99/year subscription fee" },
+        { "scenario": "Net worth tracking", "description": "See all your accounts and investments in one visual dashboard" }
+      ],
+      "editors_note": "Maybe Finance is the rare GitHub project that a non-developer can genuinely appreciate. After the company shut down, they open-sourced everything — and the result is genuinely polished.",
+      "featured": true, "weekly_pick": true, "week": "2026-W18",
+      "added_date": "2026-05-13",
+      "related_projects": ["actual-budget", "firefly-iii"],
+      "affiliate_opportunity": null
+    },
+    {
+      "id": "actual-budget",
+      "name": "Actual Budget",
+      "slug": "actual-budget",
+      "github_url": "https://github.com/actualbudget/actual",
+      "website_url": "https://actualbudget.org",
+      "stars": 14000,
+      "language": "JavaScript",
+      "license": "MIT",
+      "category": "finance",
+      "tags": ["self-hosted", "budgeting", "local-first", "envelope-method"],
+      "difficulty": 2,
+      "target_audience": ["individuals", "families"],
+      "one_liner": "Local-first budget app with envelope budgeting that syncs across devices",
+      "highlights": [
+        "Envelope budgeting method with real-time sync across devices",
+        "Local-first architecture — your financial data stays on your devices",
+        "Bank import support with CSV and OFX file formats"
+      ],
+      "use_cases": [
+        { "scenario": "Envelope budgeting", "description": "Allocate income to spending categories and track where every dollar goes" },
+        { "scenario": "Couple shared finances", "description": "Sync budgets between partners' devices without sharing bank credentials" }
+      ],
+      "editors_note": "Actual Budget is the envelope budgeting app that YNAB users migrate to when they want local control. The sync works flawlessly once set up.",
+      "added_date": "2026-05-13",
+      "related_projects": ["maybe-finance", "firefly-iii"],
+      "affiliate_opportunity": null
+    },
+    {
+      "id": "firefly-iii",
+      "name": "Firefly III",
+      "slug": "firefly-iii",
+      "github_url": "https://github.com/firefly-iii/firefly-iii",
+      "website_url": "https://www.firefly-iii.org",
+      "stars": 16000,
+      "language": "PHP",
+      "license": "AGPL-3.0",
+      "category": "finance",
+      "tags": ["self-hosted", "finance", "budgeting", "docker"],
+      "difficulty": 3,
+      "target_audience": ["developers", "tech-enthusiasts"],
+      "one_liner": "Complete personal finance manager with budgeting, reporting, and transaction rules",
+      "highlights": [
+        "Comprehensive finance tracking: accounts, transactions, budgets, and reports",
+        "Automated transaction rules for categorizing expenses",
+        "REST API for integrations with bank apps and automation tools"
+      ],
+      "use_cases": [
+        { "scenario": "Full financial control", "description": "Track every penny across all accounts with powerful reporting and categorization" },
+        { "scenario": "Automated expense tracking", "description": "Set rules to auto-categorize transactions from bank imports" }
+      ],
+      "editors_note": "Firefly III is the most feature-complete open source finance manager. It requires more setup than other options but rewards you with deep financial insights.",
+      "added_date": "2026-05-13",
+      "related_projects": ["maybe-finance", "actual-budget"],
+      "affiliate_opportunity": null
+    },
+    {
+      "id": "nextcloud",
+      "name": "Nextcloud",
+      "slug": "nextcloud",
+      "github_url": "https://github.com/nextcloud/server",
+      "website_url": "https://nextcloud.com",
+      "stars": 27000,
+      "language": "PHP",
+      "license": "AGPL-3.0",
+      "category": "self-hosted",
+      "tags": ["self-hosted", "cloud-storage", "collaboration", "docker"],
+      "difficulty": 2,
+      "target_audience": ["individuals", "teams", "businesses"],
+      "one_liner": "Self-hosted cloud suite with file storage, calendar, contacts, and office tools",
+      "highlights": [
+        "Dropbox/Google Drive replacement with file sync and sharing",
+        "Built-in calendar, contacts, mail, and video calls",
+        "Collabora/OnlyOffice integration for document editing"
+      ],
+      "use_cases": [
+        { "scenario": "Replace Google Workspace", "description": "Host your own file storage, calendar, and document editing without Google" },
+        { "scenario": "Team file sharing", "description": "Share files securely within your organization with access controls" }
+      ],
+      "editors_note": "Nextcloud is the self-hosted productivity suite that replaces an entire Google Workspace. The ecosystem of apps keeps growing.",
+      "featured": true,
+      "added_date": "2026-05-13",
+      "related_projects": ["seafile", "jellyfin"],
+      "affiliate_opportunity": "VPS hosting"
+    },
+    {
+      "id": "paperless-ngx",
+      "name": "Paperless-ngx",
+      "slug": "paperless-ngx",
+      "github_url": "https://github.com/paperless-ngx/paperless-ngx",
+      "stars": 20000,
+      "language": "Python",
+      "license": "GPL-3.0",
+      "category": "self-hosted",
+      "tags": ["self-hosted", "document-management", "ocr", "docker"],
+      "difficulty": 2,
+      "target_audience": ["individuals", "home-office"],
+      "one_liner": "Scan, OCR, and organize documents into a searchable digital archive",
+      "highlights": [
+        "Automatic OCR on upload with text search across all documents",
+        "Machine learning auto-categorization with tags and correspondents",
+        "Email consumption — automatically process incoming PDF attachments"
+      ],
+      "use_cases": [
+        { "scenario": "Go paperless at home", "description": "Scan all physical documents and search them digitally from any device" },
+        { "scenario": "Invoice management", "description": "Automatically process and categorize invoices from email" }
+      ],
+      "editors_note": "Paperless-ngx transforms a box of paper receipts into a searchable digital filing cabinet. Set it up once and it runs forever.",
+      "added_date": "2026-05-13",
+      "related_projects": ["nextcloud"],
+      "affiliate_opportunity": null
+    },
+    {
+      "id": "uptime-kuma",
+      "name": "Uptime Kuma",
+      "slug": "uptime-kuma",
+      "github_url": "https://github.com/louislam/uptime-kuma",
+      "stars": 55000,
+      "language": "JavaScript",
+      "license": "MIT",
+      "category": "self-hosted",
+      "tags": ["self-hosted", "monitoring", "uptime", "docker"],
+      "difficulty": 1,
+      "target_audience": ["developers", "sysadmins", "individuals"],
+      "one_liner": "Beautiful uptime monitoring tool with notifications and status pages",
+      "highlights": [
+        "Monitor HTTP, TCP, ping, DNS, and more from a single dashboard",
+        "Send alerts via Telegram, Slack, Discord, email, and 40+ notification channels",
+        "Public status pages to share uptime with your users"
+      ],
+      "use_cases": [
+        { "scenario": "Monitor your websites", "description": "Get instant alerts when your sites go down with a beautiful monitoring dashboard" },
+        { "scenario": "Public status page", "description": "Show customers your service availability with an auto-generated status page" }
+      ],
+      "editors_note": "Uptime Kuma is the monitoring tool that looks so good you actually want to check it. It's a one-minute Docker setup that gives you enterprise-grade monitoring for free.",
+      "added_date": "2026-05-13",
+      "related_projects": ["portainer", "grafana"],
+      "affiliate_opportunity": "VPS hosting"
+    },
+    {
+      "id": "portainer",
+      "name": "Portainer",
+      "slug": "portainer",
+      "github_url": "https://github.com/portainer/portainer",
+      "website_url": "https://www.portainer.io",
+      "stars": 30000,
+      "language": "Go",
+      "license": "Zlib",
+      "category": "self-hosted",
+      "tags": ["self-hosted", "docker", "management", "ui"],
+      "difficulty": 1,
+      "target_audience": ["developers", "sysadmins"],
+      "one_liner": "Web UI for managing Docker containers — no command line needed",
+      "highlights": [
+        "Visual container management: deploy, start, stop, and monitor containers",
+        "Template library for one-click app deployment",
+        "Multi-environment support for managing multiple Docker hosts"
+      ],
+      "use_cases": [
+        { "scenario": "Docker without CLI", "description": "Manage your containers through a web interface instead of terminal commands" },
+        { "scenario": "Multi-server Docker management", "description": "Control Docker environments across multiple servers from one dashboard" }
+      ],
+      "editors_note": "Portainer makes Docker accessible to people who prefer clicking over typing commands. It's the standard for self-hosted container management.",
+      "added_date": "2026-05-13",
+      "related_projects": ["coolify", "uptime-kuma"],
+      "affiliate_opportunity": null
+    },
+    {
+      "id": "home-assistant",
+      "name": "Home Assistant",
+      "slug": "home-assistant",
+      "github_url": "https://github.com/home-assistant/core",
+      "website_url": "https://www.home-assistant.io",
+      "stars": 73000,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "category": "home-media",
+      "tags": ["smart-home", "automation", "self-hosted", "iot"],
+      "difficulty": 3,
+      "target_audience": ["home-owners", "tech-enthusiasts", "developers"],
+      "one_liner": "The most powerful open source smart home platform — control 1000+ device types locally",
+      "highlights": [
+        "Integrates with 1000+ smart home brands and device types",
+        "Local processing — no cloud dependency means it works during outages",
+        "Powerful automation engine with visual editor and YAML configuration"
+      ],
+      "use_cases": [
+        { "scenario": "Unify smart home devices", "description": "Control Philips Hue, Samsung SmartThings, and Google devices from one interface" },
+        { "scenario": "Privacy-first home automation", "description": "Run automations locally without sending home data to cloud servers" }
+      ],
+      "editors_note": "Home Assistant is the smart home platform that takes your privacy seriously. It's more complex than Google Home, but the local control and automation depth are unmatched.",
+      "added_date": "2026-05-13",
+      "related_projects": ["jellyfin"],
+      "affiliate_opportunity": "Smart home hardware"
+    },
+    {
+      "id": "pi-hole",
+      "name": "Pi-hole",
+      "slug": "pi-hole",
+      "github_url": "https://github.com/pi-hole/pi-hole",
+      "website_url": "https://pi-hole.net",
+      "stars": 48000,
+      "language": "Shell",
+      "license": "EUPL-1.2",
+      "category": "security-privacy",
+      "tags": ["self-hosted", "dns", "ad-blocking", "privacy"],
+      "difficulty": 2,
+      "target_audience": ["home-networks", "tech-enthusiasts"],
+      "one_liner": "Network-level ad blocker that protects every device on your home network",
+      "highlights": [
+        "Blocks ads and trackers at the DNS level — works on every device",
+        "Blocks ads on devices that can't install ad blockers (smart TVs, phones)",
+        "Detailed dashboard showing queries blocked and top blocked domains"
+      ],
+      "use_cases": [
+        { "scenario": "Whole-home ad blocking", "description": "Install once on a Raspberry Pi and block ads on every device in your house" },
+        { "scenario": "Privacy protection", "description": "Prevent tracking domains from collecting browsing data across your network" }
+      ],
+      "editors_note": "Pi-hole is the $35 Raspberry Pi project that transforms your entire network's internet experience. It's the single best bang-for-buck privacy upgrade you can make at home.",
+      "added_date": "2026-05-13",
+      "related_projects": ["vaultwarden"],
+      "affiliate_opportunity": "Raspberry Pi hardware"
+    },
+    {
+      "id": "plausible",
+      "name": "Plausible Analytics",
+      "slug": "plausible",
+      "github_url": "https://github.com/plausible/analytics",
+      "website_url": "https://plausible.io",
+      "stars": 20000,
+      "language": "Elixir",
+      "license": "AGPL-3.0",
+      "category": "data-analytics",
+      "tags": ["analytics", "privacy", "self-hosted", "google-analytics-alternative"],
+      "difficulty": 2,
+      "target_audience": ["website-owners", "developers"],
+      "one_liner": "Privacy-friendly Google Analytics alternative in a lightweight, self-hosted package",
+      "highlights": [
+        "No cookies, no personal data collection — fully GDPR compliant out of the box",
+        "Script is 45x smaller than Google Analytics — faster page loads",
+        "Simple dashboard with all the metrics that actually matter"
+      ],
+      "use_cases": [
+        { "scenario": "Replace Google Analytics", "description": "Get essential website stats without cookie banners or privacy concerns" },
+        { "scenario": "Privacy-compliant analytics", "description": "Track website performance for EU audiences without GDPR violations" }
+      ],
+      "editors_note": "Plausible is what Google Analytics would look like if it was designed in 2026 with privacy as a default. The script size alone makes your pages noticeably faster.",
+      "featured": true,
+      "added_date": "2026-05-13",
+      "related_projects": ["umami", "matomo", "ackee"],
+      "affiliate_opportunity": "VPS hosting"
+    },
+    {
+      "id": "umami",
+      "name": "Umami",
+      "slug": "umami",
+      "github_url": "https://github.com/umami-software/umami",
+      "website_url": "https://umami.is",
+      "stars": 21000,
+      "language": "TypeScript",
+      "license": "MIT",
+      "category": "data-analytics",
+      "tags": ["analytics", "self-hosted", "privacy", "simple"],
+      "difficulty": 1,
+      "target_audience": ["website-owners", "bloggers"],
+      "one_liner": "Simple, fast, privacy-focused website analytics — easier to use than Google Analytics",
+      "highlights": [
+        "Clean, minimal dashboard — no learning curve required",
+        "Self-hosted with a one-click deploy on Vercel or Docker",
+        "Website events tracking with custom goals and reports"
+      ],
+      "use_cases": [
+        { "scenario": "Blog analytics", "description": "Track page views, referrers, and top content without complex setup" },
+        { "scenario": "Simple website monitoring", "description": "Get the essential metrics without drowning in hundreds of reports" }
+      ],
+      "editors_note": "Umami is the analytics tool for people who just want to know how many visitors they have and where they came from. Nothing more, nothing less.",
+      "added_date": "2026-05-13",
+      "related_projects": ["plausible", "ackee"],
+      "affiliate_opportunity": "VPS hosting"
+    },
+    {
+      "id": "obsidian",
+      "name": "Obsidian (Community Plugins)",
+      "slug": "obsidian",
+      "github_url": "https://github.com/obsidianmd/obsidian-releases",
+      "website_url": "https://obsidian.md",
+      "stars": 52000,
+      "language": "TypeScript",
+      "license": "Proprietary (free for personal use)",
+      "category": "writing-content",
+      "tags": ["note-taking", "knowledge-management", "markdown", "community"],
+      "difficulty": 1,
+      "target_audience": ["individuals", "researchers", "writers"],
+      "one_liner": "Powerful knowledge base with Markdown files and a massive plugin ecosystem",
+      "highlights": [
+        "Local-first Markdown files — your data is always portable",
+        "700+ community plugins for every workflow imaginable",
+        "Backlinks and graph view for connecting ideas visually"
+      ],
+      "use_cases": [
+        { "scenario": "Personal knowledge management", "description": "Build a second brain with linked notes and a visual knowledge graph" },
+        { "scenario": "Academic research", "description": "Organize papers, take notes, and connect research findings with backlinks" }
+      ],
+      "editors_note": "Obsidian is the note-taking app that grows with your brain. The plugin ecosystem means there's a solution for virtually every knowledge workflow.",
+      "featured": true,
+      "added_date": "2026-05-13",
+      "related_projects": ["logseq", "joplin", "appflowy"],
+      "affiliate_opportunity": null
+    },
+    {
+      "id": "logseq",
+      "name": "Logseq",
+      "slug": "logseq",
+      "github_url": "https://github.com/logseq/logseq",
+      "website_url": "https://logseq.com",
+      "stars": 34000,
+      "language": "Clojure",
+      "license": "AGPL-3.0",
+      "category": "writing-content",
+      "tags": ["note-taking", "outliner", "open-source", "privacy"],
+      "difficulty": 2,
+      "target_audience": ["researchers", "students", "writers"],
+      "one_liner": "Open source outliner for knowledge management with daily journaling at its core",
+      "highlights": [
+        "Bullet-based outliner with bidirectional linking",
+        "Daily journal as the default workflow — write first, organize later",
+        "PDF annotation and flashcard features built in"
+      ],
+      "use_cases": [
+        { "scenario": "Daily journal + knowledge base", "description": "Capture daily thoughts and let them organically connect to your knowledge network" },
+        { "scenario": "Research with PDFs", "description": "Annotate PDFs and extract key quotes into your knowledge graph" }
+      ],
+      "editors_note": "Logseq is for people who think in bullet points. The daily journal workflow combined with bidirectional links creates a unique knowledge workflow.",
+      "added_date": "2026-05-13",
+      "related_projects": ["obsidian", "joplin"],
+      "affiliate_opportunity": null
+    },
+    {
+      "id": "joplin",
+      "name": "Joplin",
+      "slug": "joplin",
+      "github_url": "https://github.com/laurent22/joplin",
+      "website_url": "https://joplinapp.org",
+      "stars": 45000,
+      "language": "TypeScript",
+      "license": "MIT",
+      "category": "writing-content",
+      "tags": ["note-taking", "encryption", "cross-platform", "evernote-alternative"],
+      "difficulty": 1,
+      "target_audience": ["individuals", "students"],
+      "one_liner": "Open source note-taking app with end-to-end encryption and Evernote import",
+      "highlights": [
+        "End-to-end encryption for synced notes across devices",
+        "Web clipper for saving articles and web pages",
+        "Evernote import tool for easy migration"
+      ],
+      "use_cases": [
+        { "scenario": "Replace Evernote", "description": "Migrate your Evernote notes to an open source, encrypted alternative" },
+        { "scenario": "Secure note-taking", "description": "Store sensitive notes with encryption that even the sync provider can't read" }
+      ],
+      "editors_note": "Joplin is the Evernote alternative that takes privacy seriously. It's not the prettiest note app, but its encryption and open source nature make it trustworthy.",
+      "added_date": "2026-05-13",
+      "related_projects": ["obsidian", "standard-notes"],
+      "affiliate_opportunity": null
+    },
+    {
+      "id": "appflowy",
+      "name": "AppFlowy",
+      "slug": "appflowy",
+      "github_url": "https://github.com/AppFlowy-IO/AppFlowy",
+      "website_url": "https://www.appflowy.io",
+      "stars": 50000,
+      "language": "Rust",
+      "license": "AGPL-3.0",
+      "category": "productivity",
+      "tags": ["productivity", "notion-alternative", "open-source", "collaboration"],
+      "difficulty": 1,
+      "target_audience": ["individuals", "teams"],
+      "one_liner": "Open source Notion alternative built with Rust — faster, private, and fully customizable",
+      "highlights": [
+        "Notion-like interface with databases, kanban boards, and rich text",
+        "Local-first with optional cloud sync",
+        "Written in Rust for performance — noticeably faster than Notion"
+      ],
+      "use_cases": [
+        { "scenario": "Replace Notion", "description": "Get Notion's flexibility without the data lock-in or performance issues" },
+        { "scenario": "Team project tracking", "description": "Use kanban boards and databases to manage team projects with full data control" }
+      ],
+      "editors_note": "AppFlowy is the most promising Notion alternative in the open source space. The Rust backend makes it snappier, and the local-first approach means your data is always accessible.",
+      "featured": true,
+      "added_date": "2026-05-13",
+      "related_projects": ["obsidian", "affine", "outline"],
+      "affiliate_opportunity": null
+    },
+    {
+      "id": "memos",
+      "name": "Memos",
+      "slug": "memos",
+      "github_url": "https://github.com/usememos/memos",
+      "stars": 26000,
+      "language": "Go",
+      "license": "MIT",
+      "category": "productivity",
+      "tags": ["note-taking", "self-hosted", "lightweight", "memo"],
+      "difficulty": 1,
+      "target_audience": ["individuals", "developers"],
+      "one_liner": "Lightweight, self-hosted memo hub for quick notes and thoughts — like a personal Twitter",
+      "highlights": [
+        "Dead simple — post short notes with markdown support",
+        "Self-hosted with Docker in one command",
+        "REST API for integrations with other tools and bots"
+      ],
+      "use_cases": [
+        { "scenario": "Quick idea capture", "description": "Jot down fleeting thoughts and code snippets without opening a full note-taking app" },
+        { "scenario": "Developer micro-blogging", "description": "Maintain a public log of daily learnings and technical insights" }
+      ],
+      "editors_note": "Memos fills the gap between Twitter and a full note app. It's perfect for thoughts that are too short for a blog post but too valuable to forget.",
+      "added_date": "2026-05-13",
+      "related_projects": ["blinko", "joplin"],
+      "affiliate_opportunity": null
+    },
+    {
+      "id": "outline",
+      "name": "Outline",
+      "slug": "outline",
+      "github_url": "https://github.com/outline/outline",
+      "website_url": "https://www.getoutline.com",
+      "stars": 26000,
+      "language": "TypeScript",
+      "license": "BSL-1.1",
+      "category": "productivity",
+      "tags": ["wiki", "documentation", "team", "collaboration"],
+      "difficulty": 2,
+      "target_audience": ["teams", "companies"],
+      "one_liner": "Fast, collaborative knowledge base and wiki for teams with beautiful editing experience",
+      "highlights": [
+        "Notion-style editor with real-time collaboration",
+        "Integration with Slack, Google, and SSO providers",
+        "Powerful search and document organization"
+      ],
+      "use_cases": [
+        { "scenario": "Team wiki / internal docs", "description": "Centralize team knowledge with a beautiful, searchable wiki" },
+        { "scenario": "Company handbook", "description": "Create a living company handbook that everyone can contribute to" }
+      ],
+      "editors_note": "Outline is the team wiki that people actually want to use. The editor experience rivals Notion, and the search is significantly faster.",
+      "added_date": "2026-05-13",
+      "related_projects": ["bookstack", "appflowy"],
+      "affiliate_opportunity": null
+    },
+    {
+      "id": "hoppscotch",
+      "name": "Hoppscotch",
+      "slug": "hoppscotch",
+      "github_url": "https://github.com/hoppscotch/hoppscotch",
+      "website_url": "https://hoppscotch.io",
+      "stars": 65000,
+      "language": "TypeScript",
+      "license": "MIT",
+      "category": "developer-tools",
+      "tags": ["api", "testing", "postman-alternative", "web"],
+      "difficulty": 1,
+      "target_audience": ["developers", "api-consumers"],
+      "one_liner": "Lightweight, web-based API development platform — the fastest way to test any endpoint",
+      "highlights": [
+        "Opens instantly in browser — no installation or signup",
+        "Supports REST, GraphQL, WebSocket, and Server-Sent Events",
+        "Team collaboration with shared collections and environments"
+      ],
+      "use_cases": [
+        { "scenario": "Quick API testing", "description": "Test any API endpoint without installing a heavy desktop application" },
+        { "scenario": "API documentation exploration", "description": "Import OpenAPI specs and explore endpoints interactively" }
+      ],
+      "editors_note": "Hoppscotch is what Postman would be if it was designed for speed. It opens in a browser tab and works immediately — perfect for quick API checks.",
+      "added_date": "2026-05-13",
+      "related_projects": ["bruno", "insomnia"],
+      "affiliate_opportunity": null
+    },
+    {
+      "id": "bruno",
+      "name": "Bruno",
+      "slug": "bruno",
+      "github_url": "https://github.com/usebruno/bruno",
+      "stars": 35000,
+      "language": "JavaScript",
+      "license": "MIT",
+      "category": "developer-tools",
+      "tags": ["api", "testing", "local-first", "postman-alternative"],
+      "difficulty": 1,
+      "target_audience": ["developers"],
+      "one_liner": "Offline-first API client that stores collections as plain files in your Git repo",
+      "highlights": [
+        "Collections stored as plain text files — version controlled with Git",
+        "No cloud sync, no accounts — your API data stays on your machine",
+        "Supports REST and GraphQL with scripting capabilities"
+      ],
+      "use_cases": [
+        { "scenario": "API testing with Git", "description": "Store API collections alongside your code and review changes in PRs" },
+        { "scenario": "Offline API development", "description": "Test APIs without an internet connection or cloud service dependency" }
+      ],
+      "editors_note": "Bruno takes a radically different approach: your API collections are just files. This means Git history, PR reviews, and zero cloud dependency.",
+      "added_date": "2026-05-13",
+      "related_projects": ["hoppscotch", "insomnia"],
+      "affiliate_opportunity": null
+    },
+    {
+      "id": "coolify",
+      "name": "Coolify",
+      "slug": "coolify",
+      "github_url": "https://github.com/coollabsio/coolify",
+      "website_url": "https://coolify.io",
+      "stars": 42000,
+      "language": "PHP",
+      "license": "Apache-2.0",
+      "category": "developer-tools",
+      "tags": ["self-hosted", "deployment", "vercel-alternative", "docker"],
+      "difficulty": 2,
+      "target_audience": ["developers", "devops"],
+      "one_liner": "Self-hosted Vercel/Heroku alternative — deploy apps, databases, and services from one dashboard",
+      "highlights": [
+        "One-click deployment for 50+ applications and services",
+        "Supports any programming language, framework, and database",
+        "Automatic SSL, preview deployments, and rollback"
+      ],
+      "use_cases": [
+        { "scenario": "Replace Vercel", "description": "Deploy your Next.js apps on your own server with the same Git-triggered workflow" },
+        { "scenario": "All-in-one hosting", "description": "Run your web apps, databases, and self-hosted tools on a single VPS" }
+      ],
+      "editors_note": "Coolify is the self-hosted deployment platform that makes a $10 VPS feel like Vercel. If you're tired of cloud hosting bills, this is your escape plan.",
+      "featured": true,
+      "added_date": "2026-05-13",
+      "related_projects": ["portainer", "dokku"],
+      "affiliate_opportunity": "VPS hosting"
+    },
+    {
+      "id": "lazygit",
+      "name": "lazygit",
+      "slug": "lazygit",
+      "github_url": "https://github.com/jesseduffield/lazygit",
+      "stars": 47000,
+      "language": "Go",
+      "license": "MIT",
+      "category": "developer-tools",
+      "tags": ["git", "terminal", "cli", "ui"],
+      "difficulty": 2,
+      "target_audience": ["developers"],
+      "one_liner": "Simple terminal UI for Git commands — faster than memorizing git flags",
+      "highlights": [
+        "Keyboard-driven interface for all common Git operations",
+        "Interactive rebase, staging, and conflict resolution made easy",
+        "Custom commands and keybindings for personalized workflow"
+      ],
+      "use_cases": [
+        { "scenario": "Daily Git workflow", "description": "Stage, commit, push, and branch through a fast keyboard-driven interface" },
+        { "scenario": "Complex rebase management", "description": "Visualize and manage interactive rebases without memorizing complex flags" }
+      ],
+      "editors_note": "lazygit is the terminal tool that makes you genuinely faster at Git. Once you learn the keybindings, going back to raw git commands feels like a step backward.",
+      "added_date": "2026-05-13",
+      "related_projects": ["lazydocker", "starship"],
+      "affiliate_opportunity": null
+    },
+    {
+      "id": "starship",
+      "name": "Starship",
+      "slug": "starship",
+      "github_url": "https://github.com/starship/starship",
+      "website_url": "https://starship.rs",
+      "stars": 45000,
+      "language": "Rust",
+      "license": "ISC",
+      "category": "developer-tools",
+      "tags": ["terminal", "prompt", "cli", "cross-shell"],
+      "difficulty": 1,
+      "target_audience": ["developers"],
+      "one_liner": "Blazing fast, infinitely customizable cross-shell prompt for any terminal",
+      "highlights": [
+        "Works with bash, zsh, fish, PowerShell, and more",
+        "Shows git status, Node/Python/Rust versions, and more in one line",
+        "Written in Rust — renders in under 1ms even on large repos"
+      ],
+      "use_cases": [
+        { "scenario": "Better terminal experience", "description": "See your git status, language versions, and directory context at a glance" },
+        { "scenario": "Multi-language development", "description": "One prompt that adapts to whatever project and language you're working with" }
+      ],
+      "editors_note": "Starship is the terminal prompt that makes every other prompt feel slow and ugly. Setup takes 5 minutes and transforms your daily terminal experience.",
+      "added_date": "2026-05-13",
+      "related_projects": ["lazygit", "zellij"],
+      "affiliate_opportunity": null
+    },
+    {
+      "id": "metabase",
+      "name": "Metabase",
+      "slug": "metabase",
+      "github_url": "https://github.com/metabase/metabase",
+      "website_url": "https://www.metabase.com",
+      "stars": 38000,
+      "language": "Clojure",
+      "license": "AGPL-3.0",
+      "category": "data-analytics",
+      "tags": ["analytics", "bi", "dashboard", "sql"],
+      "difficulty": 1,
+      "target_audience": ["teams", "analysts", "non-developers"],
+      "one_liner": "Business intelligence dashboard that anyone can use — no SQL required for basics",
+      "highlights": [
+        "Visual query builder — create reports without writing SQL",
+        "Beautiful dashboards with charts, funnels, and cohort analysis",
+        "Self-hosted free version with unlimited users and questions"
+      ],
+      "use_cases": [
+        { "scenario": "Company dashboards", "description": "Build real-time dashboards that anyone on the team can read and interact with" },
+        { "scenario": "Self-service analytics", "description": "Let non-technical team members explore data without bothering engineers" }
+      ],
+      "editors_note": "Metabase is the BI tool that doesn't feel like enterprise software. The visual query builder makes it accessible, and the dashboards are genuinely beautiful.",
+      "added_date": "2026-05-13",
+      "related_projects": ["superset", "grafana", "redash"],
+      "affiliate_opportunity": null
+    },
+    {
+      "id": "grafana",
+      "name": "Grafana",
+      "slug": "grafana",
+      "github_url": "https://github.com/grafana/grafana",
+      "website_url": "https://grafana.com",
+      "stars": 63000,
+      "language": "TypeScript",
+      "license": "AGPL-3.0",
+      "category": "data-analytics",
+      "tags": ["monitoring", "dashboard", "metrics", "observability"],
+      "difficulty": 2,
+      "target_audience": ["developers", "devops", "sre"],
+      "one_liner": "Industry-standard observability platform for metrics, logs, and traces",
+      "highlights": [
+        "Connect to 100+ data sources: Prometheus, Loki, PostgreSQL, and more",
+        "Rich visualization library with customizable dashboards",
+        "Alerting with notifications to PagerDuty, Slack, email, and more"
+      ],
+      "use_cases": [
+        { "scenario": "Infrastructure monitoring", "description": "Monitor server health, application metrics, and alert on anomalies" },
+        { "scenario": "Application dashboards", "description": "Create real-time dashboards that show business and technical KPIs" }
+      ],
+      "editors_note": "Grafana is the dashboard standard that every ops team knows. If you're collecting any kind of metrics, Grafana is the visualization layer you'll want.",
+      "added_date": "2026-05-13",
+      "related_projects": ["metabase", "netdata"],
+      "affiliate_opportunity": null
+    },
+    {
+      "id": "stirling-pdf",
+      "name": "Stirling PDF",
+      "slug": "stirling-pdf",
+      "github_url": "https://github.com/Stirling-Tools/Stirling-PDF",
+      "stars": 50000,
+      "language": "Java",
+      "license": "Apache-2.0",
+      "category": "productivity",
+      "tags": ["pdf", "tools", "self-hosted", "no-code"],
+      "difficulty": 1,
+      "target_audience": ["individuals", "office-workers"],
+      "one_liner": "Self-hosted PDF toolkit — merge, split, compress, convert, and edit PDFs in your browser",
+      "highlights": [
+        "30+ PDF tools in one web application",
+        "All processing happens locally — no files uploaded to external servers",
+        "Clean, modern interface with drag-and-drop support"
+      ],
+      "use_cases": [
+        { "scenario": "Replace online PDF tools", "description": "Process PDFs locally instead of uploading sensitive documents to sketchy websites" },
+        { "scenario": "Office PDF workflow", "description": "Merge, split, and compress PDFs without installing heavy desktop software" }
+      ],
+      "editors_note": "Stirling PDF replaces every sketchy 'free PDF tool' website with a self-hosted alternative. Your documents never leave your server, and the interface is genuinely pleasant to use.",
+      "featured": true,
+      "added_date": "2026-05-13",
+      "related_projects": ["cyberchef"],
+      "affiliate_opportunity": null
+    },
+    {
+      "id": "cal-com",
+      "name": "Cal.com",
+      "slug": "cal-com",
+      "github_url": "https://github.com/calcom/cal.com",
+      "website_url": "https://cal.com",
+      "stars": 32000,
+      "language": "TypeScript",
+      "license": "MIT",
+      "category": "productivity",
+      "tags": ["scheduling", "calendar", "calendly-alternative", "self-hosted"],
+      "difficulty": 2,
+      "target_audience": ["freelancers", "teams", "businesses"],
+      "one_liner": "Open source Calendly alternative with powerful scheduling and team management features",
+      "highlights": [
+        "Self-hosted version removes all premium feature restrictions",
+        "Supports multiple calendars, event types, and team scheduling",
+        "Integrations with Zoom, Google Meet, Teams, and more"
+      ],
+      "use_cases": [
+        { "scenario": "Replace Calendly", "description": "Offer booking links without the $12/month per-user Calendly fee" },
+        { "scenario": "Team scheduling", "description": "Let clients book meetings with any available team member through round-robin scheduling" }
+      ],
+      "editors_note": "Cal.com is the open source scheduling tool that actually matches Calendly feature-for-feature. Self-hosting it means you get everything for free.",
+      "added_date": "2026-05-13",
+      "related_projects": ["n8n"],
+      "affiliate_opportunity": null
+    }
+  ]
+}

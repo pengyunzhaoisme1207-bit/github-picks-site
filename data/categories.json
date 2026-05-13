@@ -1,0 +1,94 @@
+{
+  "categories": [
+    {
+      "id": "ai-tools",
+      "name": "AI & LLM Tools",
+      "slug": "ai-tools",
+      "icon": "Brain",
+      "description": "Open source AI tools, LLM frameworks, and automation projects that bring intelligence to your workflow without the vendor lock-in",
+      "seo_title": "Best Open Source AI Tools on GitHub 2026",
+      "project_count": 0
+    },
+    {
+      "id": "self-hosted",
+      "name": "Self-Hosted",
+      "slug": "self-hosted",
+      "icon": "Server",
+      "description": "Run on your own server, own your data. Self-hosted alternatives to popular cloud services that give you full control",
+      "seo_title": "Best Self-Hosted GitHub Projects 2026",
+      "project_count": 0
+    },
+    {
+      "id": "productivity",
+      "name": "Productivity",
+      "slug": "productivity",
+      "icon": "Zap",
+      "description": "Tools that make you faster and more organized, from note-taking to task management to automation workflows",
+      "seo_title": "Best Open Source Productivity Tools on GitHub 2026",
+      "project_count": 0
+    },
+    {
+      "id": "finance",
+      "name": "Finance & Money",
+      "slug": "finance",
+      "icon": "DollarSign",
+      "description": "Personal finance, budgeting, and investment tools that help you manage money without expensive subscriptions",
+      "seo_title": "Best Open Source Finance Tools on GitHub 2026",
+      "project_count": 0
+    },
+    {
+      "id": "design-tools",
+      "name": "Design & Creative",
+      "slug": "design-tools",
+      "icon": "Palette",
+      "description": "Open source alternatives to Figma, Photoshop, Canva and other creative tools for designers and makers",
+      "seo_title": "Best Open Source Design Tools on GitHub 2026",
+      "project_count": 0
+    },
+    {
+      "id": "developer-tools",
+      "name": "Developer Tools",
+      "slug": "developer-tools",
+      "icon": "Wrench",
+      "description": "Coding assistants, debugging tools, terminal enhancements, and dev utilities that make your daily work smoother",
+      "seo_title": "Best Open Source Developer Tools on GitHub 2026",
+      "project_count": 0
+    },
+    {
+      "id": "security-privacy",
+      "name": "Security & Privacy",
+      "slug": "security-privacy",
+      "icon": "Shield",
+      "description": "Password managers, VPN tools, and privacy utilities that protect your data without trusting third parties",
+      "seo_title": "Best Open Source Security & Privacy Tools on GitHub 2026",
+      "project_count": 0
+    },
+    {
+      "id": "home-media",
+      "name": "Home & Media",
+      "slug": "home-media",
+      "icon": "Home",
+      "description": "Smart home automation, media servers, and entertainment tools for your home lab and living room",
+      "seo_title": "Best Open Source Home & Media Tools on GitHub 2026",
+      "project_count": 0
+    },
+    {
+      "id": "data-analytics",
+      "name": "Data & Analytics",
+      "slug": "data-analytics",
+      "icon": "BarChart3",
+      "description": "Data visualization, analytics dashboards, and monitoring tools for understanding your numbers",
+      "seo_title": "Best Open Source Data & Analytics Tools on GitHub 2026",
+      "project_count": 0
+    },
+    {
+      "id": "writing-content",
+      "name": "Writing & Content",
+      "slug": "writing-content",
+      "icon": "FileText",
+      "description": "Writing tools, knowledge bases, and content creation utilities for thinkers and creators",
+      "seo_title": "Best Open Source Writing & Content Tools on GitHub 2026",
+      "project_count": 0
+    }
+  ]
+}
