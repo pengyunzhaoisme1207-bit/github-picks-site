@@ -1,0 +1,18 @@
+{
+  "summary": {
+    "total": 42,
+    "oneLinerTooShort": 0,
+    "oneLinerTooLong": 0,
+    "highlightsCount": 0,
+    "highlightsTooShort": 0,
+    "highlightsTooLong": 0,
+    "useCasesCount": 0,
+    "editorsNoteTooShort": 0,
+    "editorsNoteTooLong": 0,
+    "missingDocsUrl": 0,
+    "missingInstallUrl": 0,
+    "missingDeployUrl": 4,
+    "genericWords": 0
+  },
+  "issues": []
+}

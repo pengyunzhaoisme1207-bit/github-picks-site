@@ -4,6 +4,9 @@ export interface Project {
   slug: string;
   github_url: string;
   website_url?: string;
+  docs_url?: string;
+  install_url?: string;
+  deploy_url?: string;
   stars: number;
   language: string;
   license: string;
