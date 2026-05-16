@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { SITE_NAME, SITE_TAGLINE } from '@/lib/constants';
+import { CONTACT_EMAIL, SITE_NAME, SITE_TAGLINE } from '@/lib/constants';
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -17,11 +17,12 @@ export default function Footer() {
             <ul className="space-y-1 text-sm">
               <li><Link href="/" className="text-slate-600 hover:text-slate-900">Home</Link></li>
               <li><Link href="/weekly" className="text-slate-600 hover:text-slate-900">Weekly Picks</Link></li>
-              <li><Link href="/about" className="text-slate-600 hover:text-slate-900">About</Link></li>
-              <li><Link href="/contact" className="text-slate-600 hover:text-slate-900">Contact</Link></li>
-              <li><Link href="/privacy" className="text-slate-600 hover:text-slate-900">Privacy</Link></li>
-            </ul>
-          </div>
+            <li><Link href="/about" className="text-slate-600 hover:text-slate-900">About</Link></li>
+            <li><Link href="/contact" className="text-slate-600 hover:text-slate-900">Contact</Link></li>
+            <li><Link href="/privacy" className="text-slate-600 hover:text-slate-900">Privacy</Link></li>
+            <li><a href={`mailto:${CONTACT_EMAIL}`} className="text-slate-600 hover:text-slate-900">{CONTACT_EMAIL}</a></li>
+          </ul>
+        </div>
           <div>
             <h4 className="font-semibold mb-2">More from next-happy.com</h4>
             <ul className="space-y-1 text-sm">

@@ -1,4 +1,4 @@
-import { SITE_NAME } from '@/lib/constants';
+import { CONTACT_EMAIL, SITE_NAME } from '@/lib/constants';
 
 export const metadata = {
   title: `Submit a Project — ${SITE_NAME}`,
@@ -37,7 +37,11 @@ export default function SubmitPage() {
         </ol>
 
         <p className="text-slate-700 mb-6">
-          Email: <a href="mailto:hello@next-happy.com" className="text-blue-600 hover:underline">hello@next-happy.com</a>
+          Email:{' '}
+          <a href={`mailto:${CONTACT_EMAIL}?subject=GitHubPicks%20submission`} className="text-blue-600 hover:underline">
+            {CONTACT_EMAIL}
+          </a>
+          <span className="text-slate-500"> with subject “GitHubPicks submission”.</span>
         </p>
 
         <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">

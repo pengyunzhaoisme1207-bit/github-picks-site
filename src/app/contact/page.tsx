@@ -1,23 +1,27 @@
-import { SITE_NAME } from '@/lib/constants';
+import { CONTACT_EMAIL, SITE_NAME } from '@/lib/constants';
 
 export const metadata = {
-  title: `Contact Us — ${SITE_NAME}`,
-  description: 'Get in touch with the GitHubPicks team.',
+  title: `Contact — ${SITE_NAME}`,
+  description: `Send project corrections, submission ideas, or editorial feedback to ${CONTACT_EMAIL}.`,
 };
 
 export default function ContactPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold text-slate-900 mb-6">Contact Us</h1>
+      <h1 className="text-3xl font-bold text-slate-900 mb-6">Contact</h1>
 
       <div className="prose prose-slate max-w-none">
         <p className="text-slate-700 mb-6">
-          Have a question, feedback, or want to report an issue? We&apos;d love to hear from you.
+          Send project corrections, submission ideas, or editorial feedback to one inbox.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-900 mb-3">Email</h2>
         <p className="text-slate-700 mb-6">
-          You can reach us at <a href="mailto:hello@next-happy.com" className="text-blue-600 hover:underline">hello@next-happy.com</a>.
+          You can reach us at{' '}
+          <a href={`mailto:${CONTACT_EMAIL}`} className="text-blue-600 hover:underline">
+            {CONTACT_EMAIL}
+          </a>
+          .
           We aim to respond within 48 hours.
         </p>
 
