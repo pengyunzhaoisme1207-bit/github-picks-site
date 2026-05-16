@@ -1293,47 +1293,59 @@
       "slug": "umami",
       "github_url": "https://github.com/umami-software/umami",
       "website_url": "https://umami.is",
-      "stars": 37000,
+      "stars": 36686,
       "language": "TypeScript",
       "license": "MIT",
       "category": "data-analytics",
       "tags": [
         "analytics",
-        "self-hosted",
         "privacy",
-        "simple"
+        "self-hosted",
+        "websites",
+        "dashboard"
       ],
-      "difficulty": 1,
+      "difficulty": 2,
       "target_audience": [
         "website-owners",
-        "bloggers"
+        "developers",
+        "teams",
+        "non-developers"
       ],
-      "one_liner": "Simple, fast, privacy-focused website analytics — easier to use than Google Analytics",
+      "one_liner": "Privacy-focused website analytics that can replace Google Analytics for many small sites",
       "highlights": [
-        "Clean, minimal dashboard — no learning curve required",
-        "Self-hosted with a one-click deploy on Vercel or Docker",
-        "Website events tracking with custom goals and reports"
+        "Simple traffic dashboard without invasive tracking",
+        "Self-hostable alternative to major analytics suites",
+        "Good fit for indie sites, SaaS dashboards, and content projects"
       ],
       "use_cases": [
         {
-          "scenario": "Blog analytics",
-          "description": "Track page views, referrers, and top content without complex setup"
+          "scenario": "Track traffic without heavy tracking scripts",
+          "description": "Use it when you need page views, referrers, devices, and events without turning your site into an ad-tech stack"
         },
         {
-          "scenario": "Simple website monitoring",
-          "description": "Get the essential metrics without drowning in hundreds of reports"
+          "scenario": "Give clients a cleaner analytics dashboard",
+          "description": "Provide simple website performance reports that non-technical clients can read without training"
+        },
+        {
+          "scenario": "Own analytics data for a content site",
+          "description": "Self-host analytics for blogs, directories, and tools where privacy and control matter"
         }
       ],
-      "editors_note": "Umami is the analytics tool for people who want to know how many visitors they have, where they came from, and what they looked at — nothing more, nothing less. The dashboard is clean, minimal, and has zero learning curve. Self-hosting is a one-click deploy on Vercel or a simple Docker command. The privacy-focused approach means no cookies and no personal data collection. What makes Umami special is its simplicity as a feature, not a limitation. Unlike Google Analytics or even Plausible, Umami doesn't try to be everything — it does the basics exceptionally well. The website events tracking with custom goals and reports gives you enough depth for most use cases. The Vercel deploy option is brilliant: you can have a working analytics instance in under five minutes with no server management. For personal websites, blogs, and small projects, Umami is the perfect analytics tool.",
-      "added_date": "2026-05-13",
+      "editors_note": "Umami is one of the easiest recommendations in open source analytics because it solves a real pain: most website owners do not need a giant enterprise analytics suite. They need clear traffic numbers, useful events, and a dashboard that does not require a course to understand. The self-hosted option gives teams more control, while the product remains simple enough for indie makers and content site owners. It is a strong fit for the next-happy.com style of lightweight, SEO-driven sites.",
+      "featured": true,
+      "weekly_pick": true,
+      "week": "2026-W21",
+      "category_rank": 1,
+      "added_date": "2026-05-16",
       "related_projects": [
+        "metabase",
         "plausible",
-        "ackee"
+        "posthog"
       ],
-      "affiliate_opportunity": "VPS hosting",
+      "affiliate_opportunity": "VPS hosting for self-hosted analytics",
       "docs_url": "https://umami.is/docs",
       "install_url": "https://umami.is/docs/install",
-      "deploy_url": "https://umami.is/docs/deploy-on-vercel"
+      "deploy_url": "https://umami.is/docs/install"
     },
     {
       "id": "obsidian",
@@ -2282,6 +2294,242 @@
       "cross_links": [],
       "docs_url": "https://github.com/bytedance/deer-flow#readme",
       "install_url": "https://github.com/bytedance/deer-flow#installation"
+    },
+    {
+      "id": "paperclip",
+      "name": "Paperclip",
+      "slug": "paperclip",
+      "github_url": "https://github.com/paperclipai/paperclip",
+      "website_url": "https://paperclip.ing",
+      "stars": 65836,
+      "language": "TypeScript",
+      "license": "MIT",
+      "category": "ai-tools",
+      "tags": [
+        "ai",
+        "agents",
+        "desktop",
+        "workflow",
+        "collaboration"
+      ],
+      "difficulty": 2,
+      "target_audience": [
+        "teams",
+        "developers",
+        "operators"
+      ],
+      "one_liner": "A desktop workspace for managing AI agents across real work tasks",
+      "highlights": [
+        "Organizes agent work in one local desktop app",
+        "Built for workplace tasks rather than toy demos",
+        "Fast-rising open source project with strong community interest"
+      ],
+      "use_cases": [
+        {
+          "scenario": "Coordinate AI agents at work",
+          "description": "Use it when multiple agent runs, tasks, or handoffs start getting hard to track in browser tabs and chat windows"
+        },
+        {
+          "scenario": "Create a shared AI operating desk",
+          "description": "Give a technical team a clearer place to manage AI-assisted research, writing, coding, and follow-up work"
+        },
+        {
+          "scenario": "Evaluate desktop-first agent workflows",
+          "description": "Try a local app approach before committing to a hosted AI operations platform"
+        }
+      ],
+      "editors_note": "Paperclip is interesting because it treats AI agents as ongoing work items, not one-off chat prompts. That framing matters for teams: once AI is helping with research, code, documents, and operations, the hard part becomes tracking what each agent is doing and what still needs human review. The project is still young enough that teams should test it carefully before relying on it, but the traction is hard to ignore. For anyone exploring practical AI-agent workflows beyond chat, Paperclip is worth watching now.",
+      "featured": true,
+      "weekly_pick": true,
+      "week": "2026-W21",
+      "category_rank": 2,
+      "added_date": "2026-05-16",
+      "related_projects": [
+        "ollama",
+        "open-webui",
+        "anything-llm"
+      ],
+      "affiliate_opportunity": null,
+      "docs_url": "https://github.com/paperclipai/paperclip#readme",
+      "install_url": "https://github.com/paperclipai/paperclip#readme"
+    },
+    {
+      "id": "super-productivity",
+      "name": "Super Productivity",
+      "slug": "super-productivity",
+      "github_url": "https://github.com/super-productivity/super-productivity",
+      "website_url": "https://super-productivity.com",
+      "stars": 19392,
+      "language": "TypeScript",
+      "license": "MIT",
+      "category": "productivity",
+      "tags": [
+        "productivity",
+        "todo",
+        "time-tracking",
+        "desktop",
+        "github"
+      ],
+      "difficulty": 1,
+      "target_audience": [
+        "individuals",
+        "developers",
+        "teams",
+        "non-developers"
+      ],
+      "one_liner": "A serious to-do and time-tracking app for people who plan their day in tasks",
+      "highlights": [
+        "Combines tasks, timeboxing, and time tracking",
+        "Integrates with GitHub, GitLab, Jira, and OpenProject",
+        "Works as a desktop productivity hub without a subscription"
+      ],
+      "use_cases": [
+        {
+          "scenario": "Plan a focused workday",
+          "description": "Turn a messy task list into timeboxed work blocks and see where your day actually went"
+        },
+        {
+          "scenario": "Track developer work without enterprise bloat",
+          "description": "Pull issue work from GitHub, GitLab, or Jira while keeping your personal planning local and lightweight"
+        },
+        {
+          "scenario": "Replace lightweight subscription task apps",
+          "description": "Use one free app for recurring tasks, timers, planning, and daily review instead of paying for separate tools"
+        }
+      ],
+      "editors_note": "Super Productivity feels like a tool built by someone who actually lives inside a task list. It is not just another minimalist todo app: timeboxing, timers, integrations, and daily planning all sit in one workflow. The best fit is a person who wants more discipline than a notes app but less ceremony than a full project management suite. It is especially useful for developers because GitHub, GitLab, and Jira can feed work into the same personal planning system.",
+      "featured": true,
+      "weekly_pick": true,
+      "week": "2026-W21",
+      "category_rank": 1,
+      "added_date": "2026-05-16",
+      "related_projects": [
+        "appflowy",
+        "planka",
+        "n8n"
+      ],
+      "affiliate_opportunity": null,
+      "docs_url": "https://github.com/super-productivity/super-productivity#readme",
+      "install_url": "https://super-productivity.com"
+    },
+    {
+      "id": "openstatus",
+      "name": "OpenStatus",
+      "slug": "openstatus",
+      "github_url": "https://github.com/openstatusHQ/openstatus",
+      "website_url": "https://openstatus.dev",
+      "stars": 8672,
+      "language": "TypeScript",
+      "license": "AGPL-3.0",
+      "category": "developer-tools",
+      "tags": [
+        "monitoring",
+        "status-page",
+        "api",
+        "uptime",
+        "self-hosted"
+      ],
+      "difficulty": 2,
+      "target_audience": [
+        "developers",
+        "teams",
+        "founders"
+      ],
+      "one_liner": "Open source uptime monitoring and status pages for products that need trust signals",
+      "highlights": [
+        "Combines uptime checks with public status pages",
+        "Works well for APIs, SaaS apps, and small product teams",
+        "Open source option for replacing hosted status tools"
+      ],
+      "use_cases": [
+        {
+          "scenario": "Launch a public status page",
+          "description": "Use it when customers need a reliable place to check whether your app, API, or service is operational"
+        },
+        {
+          "scenario": "Monitor a lightweight SaaS stack",
+          "description": "Track uptime for frontend pages, backend endpoints, and APIs before users report failures"
+        },
+        {
+          "scenario": "Reduce dependency on hosted monitoring tools",
+          "description": "Self-host monitoring and status communication when cost, control, or transparency matters"
+        }
+      ],
+      "editors_note": "OpenStatus is a practical pick for small SaaS teams and indie builders because it packages two needs together: knowing when something is down and telling users what is happening. Many products start with no status page at all, then scramble to add one after the first outage. This project makes that layer easier to own. It is still more technical than a hosted-only tool, but the payoff is control over monitoring, incidents, and public trust communication.",
+      "featured": false,
+      "weekly_pick": true,
+      "week": "2026-W21",
+      "category_rank": 2,
+      "added_date": "2026-05-16",
+      "related_projects": [
+        "uptime-kuma",
+        "grafana",
+        "posthog"
+      ],
+      "affiliate_opportunity": "VPS hosting for monitoring stack",
+      "docs_url": "https://docs.openstatus.dev",
+      "install_url": "https://docs.openstatus.dev",
+      "deploy_url": "https://docs.openstatus.dev"
+    },
+    {
+      "id": "webstudio",
+      "name": "Webstudio",
+      "slug": "webstudio",
+      "github_url": "https://github.com/webstudio-is/webstudio",
+      "website_url": "https://webstudio.is",
+      "stars": 8577,
+      "language": "TypeScript",
+      "license": "AGPL-3.0",
+      "category": "design-tools",
+      "tags": [
+        "website-builder",
+        "design",
+        "webflow-alternative",
+        "cms",
+        "no-code"
+      ],
+      "difficulty": 2,
+      "target_audience": [
+        "designers",
+        "developers",
+        "founders",
+        "teams"
+      ],
+      "one_liner": "An open source visual website builder for teams that want Webflow-like control without lock-in",
+      "highlights": [
+        "Visual builder with strong CSS and layout control",
+        "Connects to headless CMS workflows instead of trapping content",
+        "Can be self-hosted or used with Webstudio hosting"
+      ],
+      "use_cases": [
+        {
+          "scenario": "Build marketing pages with less vendor lock-in",
+          "description": "Use it when you like visual building but want more control over hosting, source, and long-term ownership"
+        },
+        {
+          "scenario": "Give designers a production-oriented builder",
+          "description": "Let designers work visually while still keeping developers close to real web primitives and CSS"
+        },
+        {
+          "scenario": "Prototype content-driven websites",
+          "description": "Connect a headless CMS and build polished pages without starting from a blank codebase"
+        }
+      ],
+      "editors_note": "Webstudio is one of the more credible open source attempts at a Webflow alternative because it is not just a toy page builder. The pitch is ownership: visual editing, real CSS control, CMS connections, and the ability to host in more than one way. That makes it especially interesting for agencies and product teams that like Webflow-style speed but dislike being locked into a closed platform. It is not the simplest option for a complete beginner, but it has a clear place in the design-to-production workflow.",
+      "featured": false,
+      "weekly_pick": true,
+      "week": "2026-W21",
+      "category_rank": 1,
+      "added_date": "2026-05-16",
+      "related_projects": [
+        "penpot",
+        "silex",
+        "drawio"
+      ],
+      "affiliate_opportunity": null,
+      "docs_url": "https://docs.webstudio.is",
+      "install_url": "https://docs.webstudio.is",
+      "deploy_url": "https://docs.webstudio.is"
     }
   ]
 }

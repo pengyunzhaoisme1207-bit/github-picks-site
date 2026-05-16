@@ -1,37 +1,91 @@
 {
-  "current_week": "2026-W20",
+  "current_week": "2026-W21",
   "picks": [
     {
-      "project_id": "ollama",
+      "project_id": "paperclip",
       "rank": 1,
-      "week_note": "The easiest way to run LLMs locally, now with support for 200+ models"
+      "week_note": "A fast-rising AI agent workspace with 65k+ stars and active updates this week"
     },
     {
-      "project_id": "immich",
+      "project_id": "super-productivity",
       "rank": 2,
-      "week_note": "Self-hosted Google Photos alternative with 45k stars and active development"
+      "week_note": "A mature open source task and time-tracking app with 19k+ stars and fresh activity"
     },
     {
-      "project_id": "excalidraw",
+      "project_id": "umami",
       "rank": 3,
-      "week_note": "Hand-drawn style whiteboard tool that keeps growing its plugin ecosystem"
+      "week_note": "Privacy-focused analytics with 36k+ stars, useful for indie sites and SaaS products"
+    },
+    {
+      "project_id": "openstatus",
+      "rank": 4,
+      "week_note": "Open source uptime monitoring and status pages for small teams that need trust signals"
+    },
+    {
+      "project_id": "webstudio",
+      "rank": 5,
+      "week_note": "A credible open source Webflow alternative for visual site building without platform lock-in"
     }
   ],
   "archive": [
     {
+      "week": "2026-W20",
+      "picks": [
+        {
+          "project_id": "ollama",
+          "rank": 1,
+          "week_note": "The easiest way to run LLMs locally, now with support for 200+ models"
+        },
+        {
+          "project_id": "immich",
+          "rank": 2,
+          "week_note": "Self-hosted Google Photos alternative with 45k stars and active development"
+        },
+        {
+          "project_id": "excalidraw",
+          "rank": 3,
+          "week_note": "Hand-drawn style whiteboard tool that keeps growing its plugin ecosystem"
+        }
+      ]
+    },
+    {
       "week": "2026-W19",
       "picks": [
-        { "project_id": "vaultwarden", "rank": 1, "week_note": "Lightweight Bitwarden-compatible server" },
-        { "project_id": "n8n", "rank": 2, "week_note": "Visual workflow automation with AI nodes" },
-        { "project_id": "penpot", "rank": 3, "week_note": "Open source design tool gaining traction" }
+        {
+          "project_id": "vaultwarden",
+          "rank": 1,
+          "week_note": "Lightweight Bitwarden-compatible server"
+        },
+        {
+          "project_id": "n8n",
+          "rank": 2,
+          "week_note": "Visual workflow automation with AI nodes"
+        },
+        {
+          "project_id": "penpot",
+          "rank": 3,
+          "week_note": "Open source design tool gaining traction"
+        }
       ]
     },
     {
       "week": "2026-W18",
       "picks": [
-        { "project_id": "maybe-finance", "rank": 1, "week_note": "Open source personal finance after SaaS shutdown" },
-        { "project_id": "jellyfin", "rank": 2, "week_note": "Free media server with no premium tier" },
-        { "project_id": "actual-budget", "rank": 3, "week_note": "Local-first budgeting with envelope method" }
+        {
+          "project_id": "maybe-finance",
+          "rank": 1,
+          "week_note": "Open source personal finance after SaaS shutdown"
+        },
+        {
+          "project_id": "jellyfin",
+          "rank": 2,
+          "week_note": "Free media server with no premium tier"
+        },
+        {
+          "project_id": "actual-budget",
+          "rank": 3,
+          "week_note": "Local-first budgeting with envelope method"
+        }
       ]
     }
   ]

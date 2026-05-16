@@ -18,17 +18,17 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const year = getCurrentYear();
   return {
     title: `Best ${category.name} GitHub Projects ${year} — Free & Open Source`,
-    description: category.description,
+    description: `${category.description} Browse ${category.project_count} curated projects in this category, with editor notes and use cases.`,
     openGraph: {
       title: `Best ${category.name} GitHub Projects ${year} | ${SITE_NAME}`,
-      description: category.description,
+      description: `${category.description} Browse ${category.project_count} curated projects in this category, with editor notes and use cases.`,
       url: `${SITE_URL}/category/${category.slug}`,
       type: 'website',
     },
     twitter: {
       card: 'summary',
       title: `Best ${category.name} GitHub Projects ${year} | ${SITE_NAME}`,
-      description: category.description,
+      description: `${category.description} Browse ${category.project_count} curated projects in this category, with editor notes and use cases.`,
     },
     alternates: {
       canonical: `${SITE_URL}/category/${category.slug}`,
@@ -75,7 +75,17 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-slate-900 mb-2">{category.name}</h1>
         <p className="text-slate-600 max-w-2xl">{category.description}</p>
-        <p className="text-sm text-slate-500 mt-2">{projects.length} projects in this category</p>
+        <p className="text-sm text-slate-500 mt-2">
+          {category.project_count} curated projects in this category, sorted by stars.
+        </p>
+        <div className="mt-4 flex flex-wrap gap-3 text-sm">
+          <Link href="/weekly" className="text-blue-600 hover:underline">
+            See this week&apos;s picks
+          </Link>
+          <Link href="/" className="text-blue-600 hover:underline">
+            Browse all categories
+          </Link>
+        </div>
       </div>
 
       {projects.length === 0 ? (

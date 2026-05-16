@@ -8,18 +8,25 @@ export async function generateMetadata() {
   const now = new Date();
   const month = months[now.getMonth()];
   const year = getCurrentYear();
+  const weeklyData = getWeeklyPicks();
+  const description = `Browse ${weeklyData.picks.length} curated GitHub weekly picks for ${weeklyData.current_week}, with editor notes, use cases, difficulty ratings, and open source project links.`;
 
   return {
     title: `GitHub Weekly Picks — Top Open Source Projects ${month} ${year}`,
-    description: 'Our curated selection of the best GitHub projects this week, with editor notes and use cases.',
+    description,
     alternates: {
       canonical: `${SITE_URL}/weekly`,
     },
     openGraph: {
       title: `GitHub Weekly Picks ${month} ${year} | ${SITE_NAME}`,
-      description: 'Our curated selection of the best GitHub projects this week, with editor notes and use cases.',
+      description,
       url: `${SITE_URL}/weekly`,
       type: 'website',
+    },
+    twitter: {
+      card: 'summary',
+      title: `GitHub Weekly Picks ${month} ${year} | ${SITE_NAME}`,
+      description,
     },
   };
 }
@@ -53,8 +60,36 @@ export default async function WeeklyPage() {
       };
     })
     .filter((pick): pick is WeeklyPickItem => pick !== null);
+  const currentPickItems = picks
+    .filter((pick) => pick.week === weeklyData.current_week)
+    .sort((a, b) => a.rank - b.rank);
+  const weeklyJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: `GitHub Weekly Picks ${weeklyData.current_week}`,
+    description: `Curated open source project recommendations for ${weeklyData.current_week}.`,
+    url: `${SITE_URL}/weekly`,
+    isPartOf: {
+      '@type': 'WebSite',
+      name: SITE_NAME,
+      url: SITE_URL,
+    },
+    mainEntity: {
+      '@type': 'ItemList',
+      itemListElement: currentPickItems.map((pick) => ({
+        '@type': 'ListItem',
+        position: pick.rank,
+        name: pick.project.name,
+        description: pick.week_note,
+        url: `${SITE_URL}/project/${pick.project.slug}`,
+      })),
+    },
+  };
 
   return (
-    <WeeklyPicksDirectory currentWeek={weeklyData.current_week} picks={picks} />
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(weeklyJsonLd) }} />
+      <WeeklyPicksDirectory currentWeek={weeklyData.current_week} picks={picks} />
+    </>
   );
 }

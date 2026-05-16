@@ -39,7 +39,16 @@ export function getWeeklyPickProjects(): Project[] {
 
 export function getCategories(): Category[] {
   const data = readJSON<{ categories: Category[] }>('categories.json');
-  return data.categories;
+  const projects = getProjects();
+  const counts = projects.reduce<Record<string, number>>((acc, project) => {
+    acc[project.category] = (acc[project.category] || 0) + 1;
+    return acc;
+  }, {});
+
+  return data.categories.map((category) => ({
+    ...category,
+    project_count: counts[category.slug] || 0,
+  }));
 }
 
 export function getCategoryBySlug(slug: string): Category | undefined {
