@@ -1,4 +1,4 @@
-import { getCategories, getProjects } from '@/lib/data';
+import { getCategories, getProjects, getWeeklyPicks } from '@/lib/data';
 import HeroSection from '@/components/sections/HeroSection';
 import WeeklyPicksSection from '@/components/sections/WeeklyPicksSection';
 import LatestProjectsSection from '@/components/sections/LatestProjectsSection';
@@ -9,6 +9,7 @@ import ProjectDirectory from '@/components/directory/ProjectDirectory';
 export default function HomePage() {
   const projects = getProjects();
   const categories = getCategories();
+  const weeklyData = getWeeklyPicks();
   const latest = projects
     .sort((a, b) => new Date(b.added_date).getTime() - new Date(a.added_date).getTime())
     .slice(0, 6);
@@ -31,10 +32,10 @@ export default function HomePage() {
 
   return (
     <div>
-      <HeroSection projects={directoryProjects} />
-      <ProjectDirectory projects={directoryProjects} categories={categories} />
-      <AdSlot slot="top" />
+      <HeroSection projects={directoryProjects} categoryCount={categories.length} currentWeek={weeklyData.current_week} />
       <WeeklyPicksSection />
+      <AdSlot slot="top" />
+      <ProjectDirectory projects={directoryProjects} categories={categories} />
       <LatestProjectsSection projects={latest} />
       <AdSlot slot="middle" />
       <section className="py-12 px-4 bg-slate-50">
