@@ -8,7 +8,7 @@
 ```
 名称：GitHubPicks
 口号：Discover the Best GitHub Projects for Real People
-子域名：github.next-happy.com
+子域名：www.githuppick.next-happy.com
 技术栈：Next.js App Router + TypeScript + Tailwind CSS（当前 package 使用 Next.js 16）
 数据：JSON 文件驱动，构建时静态生成 (SSG)
 部署：Vercel
@@ -149,11 +149,11 @@ fix(seo): add canonical URLs to all template pages
 
 | 来源 | 目标 | 链接文案 |
 |---|---|---|
-| next-happy.com AI 评测页 | github.next-happy.com | "See the open source alternative on GitHubPicks" |
-| github.next-happy.com AI 项目页 | next-happy.com | "Compare top AI tools on next-happy.com" |
-| github.next-happy.com footer | converter.next-happy.com | "Free Unit Converter" |
-| github.next-happy.com Claude Code 页 | prompt.next-happy.com | "Find the best Claude Code prompts" |
-| prompt.next-happy.com | github.next-happy.com | "Discover open source AI tools on GitHubPicks" |
+| next-happy.com AI 评测页 | www.githuppick.next-happy.com | "See the open source alternative on GitHubPicks" |
+| www.githuppick.next-happy.com AI 项目页 | next-happy.com | "Compare top AI tools on next-happy.com" |
+| www.githuppick.next-happy.com footer | converter.next-happy.com | "Free Unit Converter" |
+| www.githuppick.next-happy.com Claude Code 页 | prompt.next-happy.com | "Find the best Claude Code prompts" |
+| prompt.next-happy.com | www.githuppick.next-happy.com | "Discover open source AI tools on GitHubPicks" |
 
 ## 部署红线
 

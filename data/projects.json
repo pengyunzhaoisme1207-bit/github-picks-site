@@ -546,7 +546,9 @@
       "week": "2026-W19",
       "added_date": "2026-05-13",
       "related_projects": [
-        "bitwarden"
+        "bitwarden",
+        "pi-hole",
+        "nextcloud"
       ],
       "affiliate_opportunity": "VPS hosting",
       "docs_url": "https://github.com/dani-garcia/vaultwarden/wiki",
@@ -799,7 +801,9 @@
       "editors_note": "draw.io is the Swiss Army knife of diagramming — it covers more diagram types than any single competitor, from flowcharts and org charts to UML, ER diagrams, network topologies, and BPMN. It works in your browser or as a desktop app with full offline support. The Google Drive, OneDrive, and GitHub integrations mean your diagrams live wherever your documents live. What makes draw.io genuinely useful is its zero-friction approach: open it, draw something, save it. No account required, no premium features gated, no learning curve. The template library is massive and the shape libraries cover virtually every diagram standard. It's not the prettiest diagram tool, and it doesn't have real-time collaboration. But when you need to create a professional-looking diagram quickly — especially one that needs to follow a specific standard — draw.io is the tool that never lets you down.",
       "added_date": "2026-05-13",
       "related_projects": [
-        "excalidraw"
+        "excalidraw",
+        "penpot",
+        "webstudio"
       ],
       "affiliate_opportunity": null,
       "docs_url": "https://www.drawio.com/doc",
@@ -1040,7 +1044,9 @@
       "editors_note": "Paperless-ngx is the project that finally makes going paperless feel achievable rather than aspirational. The workflow is simple: scan a document, and Paperless automatically OCRs it, extracts text, suggests tags and categories using machine learning, and files it in a searchable archive. The email consumption feature is particularly clever — pipe your invoices and receipts through a dedicated email address and they're processed automatically. The search is fast and accurate, making it genuinely useful as a document management system rather than just a digital filing cabinet. What impressed us is how well the ML categorization works after just a few weeks of training. The Docker setup is straightforward, and the web interface is clean and functional. The only real barrier is the initial setup: you need a scanner and some patience to get your existing paper organized. But once it's running, it runs forever.",
       "added_date": "2026-05-13",
       "related_projects": [
-        "nextcloud"
+        "nextcloud",
+        "stirling-pdf",
+        "memos"
       ],
       "affiliate_opportunity": null,
       "docs_url": "https://docs.paperless-ngx.com",
@@ -1183,7 +1189,9 @@
       "editors_note": "Home Assistant is the smart home platform that takes your privacy and local control seriously — and it does so without compromising on capability. It integrates with over a thousand device types, from Philips Hue bulbs to obscure Zigbee sensors, and processes everything locally so it keeps working during internet outages. The visual automation editor makes complex routines accessible, while the YAML configuration gives power users unlimited flexibility. What sets Home Assistant apart from Google Home or Apple HomeKit is the depth of control: you can create automations that no commercial platform would ever offer, because they'd be too complex or too niche. The community is enormous, with thousands of custom integrations. The trade-off is real: setup takes time, and you need to be comfortable learning a new system. But once it's running, it's the most capable smart home platform available, period.",
       "added_date": "2026-05-13",
       "related_projects": [
-        "jellyfin"
+        "jellyfin",
+        "pi-hole",
+        "uptime-kuma"
       ],
       "affiliate_opportunity": "Smart home hardware",
       "docs_url": "https://www.home-assistant.io/docs/",
@@ -1230,7 +1238,9 @@
       "editors_note": "Pi-hole is the single most impactful privacy upgrade you can make at home for thirty-five dollars and an hour of your time. Install it on a Raspberry Pi, point your router's DNS at it, and suddenly every device on your network stops loading ads and trackers — smart TVs, game consoles, phones, laptops, everything. No app installation needed, no per-device configuration, no opt-in. The dashboard shows you exactly what's being blocked in real time, which is both fascinating and slightly terrifying. What makes Pi-hole special is its simplicity: it's DNS-level blocking, which means it catches ads on devices where you can't install ad blockers. The community-maintained blocklists are excellent and updated regularly. The only real caveat is that you need a device that runs 24/7, but a Pi Zero costs almost nothing to power. For home privacy, nothing else comes close to this price-to-impact ratio.",
       "added_date": "2026-05-13",
       "related_projects": [
-        "vaultwarden"
+        "vaultwarden",
+        "home-assistant",
+        "uptime-kuma"
       ],
       "affiliate_opportunity": "Raspberry Pi hardware",
       "docs_url": "https://docs.pi-hole.net",
@@ -2006,7 +2016,9 @@
       "featured": true,
       "added_date": "2026-05-13",
       "related_projects": [
-        "cyberchef"
+        "cyberchef",
+        "paperless-ngx",
+        "appflowy"
       ],
       "affiliate_opportunity": null,
       "docs_url": "https://github.com/Stirling-Tools/Stirling-PDF#readme",
@@ -2053,7 +2065,9 @@
       "editors_note": "Cal.com is the open source scheduling tool that actually matches Calendly feature-for-feature, which is rare in the open source world. The self-hosted version removes all premium restrictions — you get multiple calendars, event types, team scheduling, round-robin assignment, and integrations with Zoom, Google Meet, and Teams without paying a dime. The interface is polished and the booking flow is smooth for both hosts and guests. What makes Cal.com special is how it handles the full scheduling lifecycle: availability management, timezone handling, conflict detection, and automated reminders all work seamlessly. The API is well-documented, making it easy to integrate with other tools. The trade-off is the setup complexity: self-hosting requires a database, caching layer, and email service configuration. It's not a five-minute install. But if you're tired of Calendly's per-user pricing or need features locked behind their enterprise plan, Cal.com gives you everything for free.",
       "added_date": "2026-05-13",
       "related_projects": [
-        "n8n"
+        "n8n",
+        "appflowy",
+        "super-productivity"
       ],
       "affiliate_opportunity": null,
       "docs_url": "https://cal.com/docs",

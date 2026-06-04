@@ -2,7 +2,7 @@
 
 GitHubPicks is a curated, plain-English directory of useful GitHub projects for real people. The site helps visitors discover open source tools by use case, difficulty, and editorial context instead of forcing them to read developer-first README files.
 
-Production URL: `https://github.next-happy.com`
+Production URL: `https://www.githuppick.next-happy.com`
 
 ## Agent Entry
 

@@ -19,10 +19,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const project = getProjectBySlug(slug);
   if (!project) return { title: 'Project Not Found' };
+  const title = `${project.name} GitHub Project Review 2026`;
+  const description = `${project.one_liner}. Read plain-English use cases, setup notes, difficulty, license, and when this open source project is worth trying.`;
 
   return {
-    title: `${project.name} — ${project.one_liner}`,
-    description: project.editors_note.slice(0, 155),
+    title,
+    description: description.slice(0, 158),
     openGraph: {
       title: `${project.name} | GitHubPicks`,
       description: project.one_liner,
@@ -65,6 +67,42 @@ function getFitSummary(project: Project) {
   }
 
   return 'Best for developers and technical teams that want control, extensibility, and a deeper setup path.';
+}
+
+function getAudienceLabel(project: Project) {
+  return project.target_audience.map((audience) => audience.replace(/-/g, ' ')).join(', ');
+}
+
+function getInstallCaution(project: Project) {
+  if (project.difficulty === 1) {
+    return `${project.name} is one of the easier projects in this category to try first. You should still check the official installation page, but the expected path is closer to downloading an app, running a simple command, or following a guided setup than maintaining a complex server.`;
+  }
+
+  if (project.difficulty === 2) {
+    return `${project.name} is approachable if you are comfortable following documentation, using Docker, or adjusting a few settings. It is not a one-click consumer app, but the setup cost is reasonable when the project solves a recurring workflow problem.`;
+  }
+
+  return `${project.name} is best treated as a technical project. It may require command-line work, hosting knowledge, environment variables, or debugging. The extra effort can be worth it for teams that need control, but casual users should read the docs before committing time.`;
+}
+
+function getSkipReason(project: Project) {
+  if (project.tags.includes('self-hosted') || project.tags.includes('docker')) {
+    return `Skip it for now if you do not want to maintain a server, run Docker, or think about updates and backups. A hosted commercial tool may be simpler when convenience matters more than control.`;
+  }
+
+  if (project.difficulty === 3) {
+    return `Skip it for now if you need an immediate no-code result. This project is more valuable when you have technical support or a developer willing to adapt it to your workflow.`;
+  }
+
+  return `Skip it for now if your current tool already solves the same problem well. Open source is most valuable when it gives you privacy, flexibility, cost savings, or a workflow improvement you cannot get from your existing setup.`;
+}
+
+function getWorkflowSummary(project: Project) {
+  const firstUseCase = project.use_cases[0];
+  const secondUseCase = project.use_cases[1];
+  const tagText = project.tags.slice(0, 4).join(', ');
+
+  return `${project.name} is most useful when your goal matches one of its real use cases rather than when you are simply browsing popular repositories. Start by checking whether "${firstUseCase.scenario.toLowerCase()}" sounds like your situation. If it does, read the install guide, try the smallest possible setup, and only then decide whether to bring it into a personal workflow or team stack. The project is tagged around ${tagText}, which gives you a quick sense of the ecosystem it belongs to.${secondUseCase ? ` It can also fit "${secondUseCase.scenario.toLowerCase()}", but that second path may require a different setup or expectation.` : ''}`;
 }
 
 function getActionLinks(project: Project) {
@@ -261,6 +299,42 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
               <p className="text-sm text-slate-600">{uc.description}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="mb-6 rounded-lg border border-slate-200 bg-white p-5">
+        <h2 className="text-lg font-semibold text-slate-900 mb-3">
+          Plain-English Buying Guide
+        </h2>
+        <div className="space-y-4 text-slate-700 leading-relaxed">
+          <p>
+            {project.name} is a good candidate for {getAudienceLabel(project)} who want an open
+            source option in the {breadcrumbName.toLowerCase()} category. The key question is not
+            whether the repository is popular. The better question is whether it removes a real
+            friction point from your day: replacing a paid SaaS tool, keeping more data under your
+            control, speeding up a repeated task, or giving a team a workflow they can inspect and
+            adapt.
+          </p>
+          <p>{getWorkflowSummary(project)}</p>
+        </div>
+      </section>
+
+      <section className="mb-6 grid grid-cols-1 gap-4 md:grid-cols-2">
+        <div className="rounded-lg border border-slate-200 bg-slate-50 p-5">
+          <h2 className="text-lg font-semibold text-slate-900 mb-3">Before You Install</h2>
+          <p className="text-slate-700 leading-relaxed">{getInstallCaution(project)}</p>
+          <p className="mt-3 text-sm text-slate-600">
+            Check the {project.license} license, the {project.language} ecosystem, and the latest
+            activity on GitHub before using it for important work.
+          </p>
+        </div>
+        <div className="rounded-lg border border-slate-200 bg-slate-50 p-5">
+          <h2 className="text-lg font-semibold text-slate-900 mb-3">When to Skip It</h2>
+          <p className="text-slate-700 leading-relaxed">{getSkipReason(project)}</p>
+          <p className="mt-3 text-sm text-slate-600">
+            If you are unsure, compare it with the similar projects below before spending time on a
+            full setup.
+          </p>
         </div>
       </section>
 
